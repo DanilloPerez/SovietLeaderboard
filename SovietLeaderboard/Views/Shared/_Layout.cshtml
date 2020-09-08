@@ -6,14 +6,84 @@
     <title>@ViewData["Title"] - SovietLeaderboard</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/css/index.css" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
 </head>
 <body>
-   
-    
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-   
+
+
+    <div class="d-flex" id="wrapper">
+
+        <!-- Sidebar -->
+        <div class="Background border-right" id="sidebar-wrapper" height: 100%">
+
+            <div class="sidebar-heading">Menu</div>
+
+            <div class="list-group list-group-flush">
+                <a href="#" class="list-group-item list-group-item-action Background">Home</a>
+                <a href="#" class="list-group-item list-group-item-action Background">TallyList</a>
+                <a href="#" class="list-group-item list-group-item-action Background">Friends</a>
+                <a href="#" class="list-group-item list-group-item-action Background">Tournaments</a>
+                <a href="#" class="list-group-item list-group-item-action Background">Profile</a>
+                <a href="#" class="list-group-item list-group-item-action Background">Stats</a>
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+
+            <nav class="Background navbar navbar-expand-lg  border-bottom">
+
+
+
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="SovietSymbol">
+                        <h1>SovietLeaderboard</h1>
+                        <h1 class="SovietSymbol" style="width:80px; font-size:80px">☭</h1>
+                        <ul class="Settings navbar-nav ml-auto mt-2 mt-lg-0">
+                            <li class="nav-item dropdown">
+                                <a class="Background nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Settings
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Dark Mode</a>
+                                    <a class="dropdown-item" href="#">Logout</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </nav>
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+
+
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+        $("#menu-toggle").click(function (e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });</script>
+
+
+
+
+
 
     <footer class="border-top footer text-muted" style="background-color: #ffd800">
         <div class="container">
@@ -23,6 +93,7 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
     @RenderSection("Scripts", required: false)
 </body>
 </html>

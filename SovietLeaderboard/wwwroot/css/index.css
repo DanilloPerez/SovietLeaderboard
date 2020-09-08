@@ -1,0 +1,22 @@
+﻿
+body {
+
+}
+
+.Background{
+    color: #ffd800;
+    background-color: #ff0000;
+    font-family:'Back In The USSR DL' 
+}
+
+.SovietSymbol{
+    margin-left:auto;
+    margin-right:auto;
+    
+}
+
+.Settings{
+    position: absolute;
+    top:8px;
+    right:15px
+}
