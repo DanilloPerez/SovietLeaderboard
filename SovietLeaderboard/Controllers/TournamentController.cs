@@ -8,7 +8,15 @@ namespace SovietLeaderboard.Controllers
 {
     public class TournamentController : Controller
     {
-        public IActionResult Index()
+        public IActionResult TournamentTreeView()
+        {
+            return View();
+        }
+        public IActionResult TournamentRegisterView()
+        {
+            return View();
+        }
+        public IActionResult CreateTournamentView()
         {
             return View();
         }

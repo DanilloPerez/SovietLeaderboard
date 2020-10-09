@@ -8,9 +8,14 @@ namespace SovietLeaderboard.Controllers
 {
     public class TeamController : Controller
     {
-        public IActionResult Index()
+        public IActionResult TeamView()
         {
             return View();
         }
+        public IActionResult CreateTeamView()
+        {
+            return View();
+        }
+        
     }
 }

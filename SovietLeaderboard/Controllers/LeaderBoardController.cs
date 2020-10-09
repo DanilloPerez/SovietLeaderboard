@@ -8,7 +8,19 @@ namespace SovietLeaderboard.Controllers
 {
     public class LeaderBoardController : Controller
     {
-        public IActionResult Index()
+        public IActionResult LeaderboardView()
+        {
+            return View();
+        }
+        public IActionResult LaptimeView()
+        {
+            return View();
+        }
+        public IActionResult TallySheetView()
+        {
+            return View();
+        }
+        public IActionResult CreateLeaderBoardView()
         {
             return View();
         }
