@@ -1,21 +1,18 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\danil\\source\\repos\\SovietLeaderboard\\ControllerLayer\\ControllerLayer.csproj": {}
+    "C:\\Users\\danil\\Source\\Repos\\SovietLeaderboard\\ControllerLayer\\ControllerLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\danil\\source\\repos\\SovietLeaderboard\\ControllerLayer\\ControllerLayer.csproj": {
+    "C:\\Users\\danil\\Source\\Repos\\SovietLeaderboard\\ControllerLayer\\ControllerLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\danil\\source\\repos\\SovietLeaderboard\\ControllerLayer\\ControllerLayer.csproj",
+        "projectUniqueName": "C:\\Users\\danil\\Source\\Repos\\SovietLeaderboard\\ControllerLayer\\ControllerLayer.csproj",
         "projectName": "ControllerLayer",
-        "projectPath": "C:\\Users\\danil\\source\\repos\\SovietLeaderboard\\ControllerLayer\\ControllerLayer.csproj",
+        "projectPath": "C:\\Users\\danil\\Source\\Repos\\SovietLeaderboard\\ControllerLayer\\ControllerLayer.csproj",
         "packagesPath": "C:\\Users\\danil\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\danil\\source\\repos\\SovietLeaderboard\\ControllerLayer\\obj\\",
+        "outputPath": "C:\\Users\\danil\\Source\\Repos\\SovietLeaderboard\\ControllerLayer\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
           "C:\\Users\\danil\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -55,7 +52,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     }
