@@ -6,5 +6,7 @@ namespace DataAccessLayer
 {
     class LeaderboardManager
     {
+        //AddLaptime(int UserID)
+        //InsertTeam(string TeamName)
     }
 }

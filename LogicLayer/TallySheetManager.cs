@@ -6,5 +6,7 @@ namespace LogicLayer
 {
     class TallySheetManager
     {
+        //EditTallySheetTitle(string Title)
+        //UpdateCount(int Count)
     }
 }

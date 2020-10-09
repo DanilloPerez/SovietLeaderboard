@@ -6,5 +6,7 @@ namespace DataAccessLayer
 {
     class TeamManager
     {
+        //AddPlayer(int UserID)
+        //InsertTeam(string TeamName)
     }
 }

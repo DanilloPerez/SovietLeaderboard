@@ -6,5 +6,7 @@ namespace LogicLayer
 {
     class TournamentManager
     {
+        //AddTeam(string TeamID)
+        //AddPLayer(string UserID)
     }
 }

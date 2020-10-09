@@ -6,5 +6,7 @@ namespace DataAccessLayer
 {
     class LaptimesManager
     {
+        //AddLaptimes( int Time )
+        
     }
 }

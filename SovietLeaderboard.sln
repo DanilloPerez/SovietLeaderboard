@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccessLayer", "DataAcce
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LogicLayer", "LogicLayer\LogicLayer.csproj", "{CC3700D0-5B80-47F6-9F23-1C7B14F20BA5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Models", "Models\Models.csproj", "{F8AD29AE-A598-41EE-81BA-1F9E6FC81205}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModelsDTO", "Models\ModelsDTO.csproj", "{F8AD29AE-A598-41EE-81BA-1F9E6FC81205}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

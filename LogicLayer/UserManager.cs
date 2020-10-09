@@ -6,5 +6,8 @@ namespace LogicLayer
 {
     class UserManager
     {
+        //EditProfile(ProfileModel)
+        //ViewProfile(int UserID)
+        //CreateProfile(string UserName)
     }
 }

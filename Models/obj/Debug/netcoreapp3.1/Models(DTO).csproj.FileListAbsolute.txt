@@ -1,0 +1,5 @@
+C:\Users\danil\Source\Repos\SovietLeaderboard\Models\bin\Debug\netcoreapp3.1\Models(DTO).deps.json
+C:\Users\danil\Source\Repos\SovietLeaderboard\Models\bin\Debug\netcoreapp3.1\Models(DTO).dll
+C:\Users\danil\Source\Repos\SovietLeaderboard\Models\obj\Debug\netcoreapp3.1\Models(DTO).csprojAssemblyReference.cache
+C:\Users\danil\Source\Repos\SovietLeaderboard\Models\obj\Debug\netcoreapp3.1\Models(DTO).AssemblyInfoInputs.cache
+C:\Users\danil\Source\Repos\SovietLeaderboard\Models\obj\Debug\netcoreapp3.1\Models(DTO).AssemblyInfo.cs

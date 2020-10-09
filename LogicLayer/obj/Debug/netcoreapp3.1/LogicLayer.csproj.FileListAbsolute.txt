@@ -1,0 +1,9 @@
+C:\Users\danil\Source\Repos\SovietLeaderboard\LogicLayer\bin\Debug\netcoreapp3.1\LogicLayer.deps.json
+C:\Users\danil\Source\Repos\SovietLeaderboard\LogicLayer\bin\Debug\netcoreapp3.1\LogicLayer.dll
+C:\Users\danil\Source\Repos\SovietLeaderboard\LogicLayer\bin\Debug\netcoreapp3.1\LogicLayer.pdb
+C:\Users\danil\Source\Repos\SovietLeaderboard\LogicLayer\obj\Debug\netcoreapp3.1\LogicLayer.csprojAssemblyReference.cache
+C:\Users\danil\Source\Repos\SovietLeaderboard\LogicLayer\obj\Debug\netcoreapp3.1\LogicLayer.AssemblyInfoInputs.cache
+C:\Users\danil\Source\Repos\SovietLeaderboard\LogicLayer\obj\Debug\netcoreapp3.1\LogicLayer.AssemblyInfo.cs
+C:\Users\danil\Source\Repos\SovietLeaderboard\LogicLayer\obj\Debug\netcoreapp3.1\LogicLayer.csproj.CoreCompileInputs.cache
+C:\Users\danil\Source\Repos\SovietLeaderboard\LogicLayer\obj\Debug\netcoreapp3.1\LogicLayer.dll
+C:\Users\danil\Source\Repos\SovietLeaderboard\LogicLayer\obj\Debug\netcoreapp3.1\LogicLayer.pdb
