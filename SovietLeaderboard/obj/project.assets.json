@@ -5905,6 +5905,7 @@
       "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 3.1.8",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 3.1.8",
       "Microsoft.AspNetCore.Identity.UI >= 3.1.8",
+      "Microsoft.EntityFrameworkCore.Analyzers >= 3.1.8",
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.8",
       "Microsoft.EntityFrameworkCore.Tools >= 3.1.6",
       "ModelsDTO >= 1.0.0",
@@ -5917,11 +5918,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\danil\\source\\repos\\SovietLeaderboard\\SovietLeaderboard\\SovietLeaderboard.csproj",
+      "projectUniqueName": "C:\\Users\\danil\\Source\\Repos\\SovietLeaderboard\\SovietLeaderboard\\SovietLeaderboard.csproj",
       "projectName": "SovietLeaderboard",
-      "projectPath": "C:\\Users\\danil\\source\\repos\\SovietLeaderboard\\SovietLeaderboard\\SovietLeaderboard.csproj",
+      "projectPath": "C:\\Users\\danil\\Source\\Repos\\SovietLeaderboard\\SovietLeaderboard\\SovietLeaderboard.csproj",
       "packagesPath": "C:\\Users\\danil\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\danil\\source\\repos\\SovietLeaderboard\\SovietLeaderboard\\obj\\",
+      "outputPath": "C:\\Users\\danil\\Source\\Repos\\SovietLeaderboard\\SovietLeaderboard\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\danil\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5937,11 +5938,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\danil\\source\\repos\\SovietLeaderboard\\LogicLayer\\LogicLayer.csproj": {
-              "projectPath": "C:\\Users\\danil\\source\\repos\\SovietLeaderboard\\LogicLayer\\LogicLayer.csproj"
+            "C:\\Users\\danil\\Source\\Repos\\SovietLeaderboard\\LogicLayer\\LogicLayer.csproj": {
+              "projectPath": "C:\\Users\\danil\\Source\\Repos\\SovietLeaderboard\\LogicLayer\\LogicLayer.csproj"
             },
-            "C:\\Users\\danil\\source\\repos\\SovietLeaderboard\\Models\\ModelsDTO.csproj": {
-              "projectPath": "C:\\Users\\danil\\source\\repos\\SovietLeaderboard\\Models\\ModelsDTO.csproj"
+            "C:\\Users\\danil\\Source\\Repos\\SovietLeaderboard\\Models\\ModelsDTO.csproj": {
+              "projectPath": "C:\\Users\\danil\\Source\\Repos\\SovietLeaderboard\\Models\\ModelsDTO.csproj"
             }
           }
         }
@@ -5964,6 +5965,10 @@
             "version": "[3.1.8, )"
           },
           "Microsoft.AspNetCore.Identity.UI": {
+            "target": "Package",
+            "version": "[3.1.8, )"
+          },
+          "Microsoft.EntityFrameworkCore.Analyzers": {
             "target": "Package",
             "version": "[3.1.8, )"
           },
@@ -6000,7 +6005,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
       }
     }
   },
