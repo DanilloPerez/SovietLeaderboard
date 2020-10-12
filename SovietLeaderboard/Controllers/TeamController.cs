@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using SovietLeaderboard.Models;
 
 namespace SovietLeaderboard.Controllers
 {
@@ -12,7 +13,13 @@ namespace SovietLeaderboard.Controllers
         {
             return View();
         }
+        [HttpGet]
         public IActionResult CreateTeamView()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult CreateTeamView(CreateTeamViewModel model)
         {
             return View();
         }
