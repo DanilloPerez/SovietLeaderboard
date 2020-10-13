@@ -12,8 +12,8 @@ namespace DataAccessLayer
         private MySqlConnection CreateConnection()
         {
             MySqlConnection cnn;
-            string connetionString = $"server=185.182.57.161;database=tijnvcd415_SLB;uid=tijnvcd415_Danillo;pwd=123456;";
-            cnn = new MySqlConnection(connetionString);
+            string connectionstring = $"server=185.182.57.161;database=tijnvcd415_SLB;uid=tijnvcd415_Danillo;pwd=123456;";
+            cnn = new MySqlConnection(connectionstring);
             return cnn;
         }
 

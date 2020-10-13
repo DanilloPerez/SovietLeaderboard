@@ -181,3 +181,5 @@ C:\Users\danil\Source\Repos\SovietLeaderboard\SovietLeaderboard\bin\Debug\netcor
 C:\Users\danil\Source\Repos\SovietLeaderboard\SovietLeaderboard\obj\Debug\netcoreapp3.1\SovietLeaderboard.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\danil\Source\Repos\SovietLeaderboard\SovietLeaderboard\obj\Debug\netcoreapp3.1\SovietLeaderboard.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\danil\Source\Repos\SovietLeaderboard\SovietLeaderboard\obj\Debug\netcoreapp3.1\Razor\Views\Team\EditTeam.cshtml.g.cs
+C:\Users\danil\Source\Repos\SovietLeaderboard\SovietLeaderboard\obj\Debug\netcoreapp3.1\SovietLeaderboard.csproj.CoreCompileInputs.cache
+C:\Users\danil\Source\Repos\SovietLeaderboard\SovietLeaderboard\obj\Debug\netcoreapp3.1\SovietLeaderboard.genruntimeconfig.cache
