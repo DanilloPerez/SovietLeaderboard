@@ -10,6 +10,7 @@ namespace SovietLeaderboard.Controllers
     {
         public IActionResult TournamentTreeView()
         {
+
             return View();
         }
         public IActionResult TournamentRegisterView()

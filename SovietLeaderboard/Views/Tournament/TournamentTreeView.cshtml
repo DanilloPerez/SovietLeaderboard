@@ -2,4 +2,73 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
+    <style type=\text/css\>
+        .thd {
+            background: rgb(220,220,220);
+            font: bold 10pt Arial;
+            text-align: center;
+        }
+
+        .team {
+            color: white;
+            background: rgb(100,100,100);
+            font: bold 10pt Arial;
+            border-right: solid 2px black;
+        }
+
+        .winner {
+            color: white;
+            background: rgb(60,60,60);
+            font: bold 10pt Arial;
+        }
+
+        .vs {
+            font: bold 7pt Arial;
+            border-right: solid 2px black;
+        }
+
+        td, th {
+            padding: 3px 15px;
+            border-right: dotted 2px rgb(200,200,200);
+            text-align: right;
+        }
+
+        h1 {
+            font: bold 14pt Arial;
+            margin-top: 24pt;
+        }
+    </style>
+;
+
+    <h1>Tournament Results</h1>
+    <table border=0
+        cellspacing=0>
+
+
+      
+    </table>
+
+    <h1>Third Place Results</h1>
+;
+    <table border=0 cellspacing=0>
+        <tr>
+            <th class=\thd\>Round 1</th>
+            <th class=\thd\>Third Place</th>
+        </tr>
+        <tr>
+            <td class=\white_span\>&nbsp;</td>
+            <td class=\white_span\ rowspan=2>&nbsp;</td>
+        </tr>
+        <tr>
+            <td class=\team\>Team  + tournament.ThirdPlaceMatch.teamid1 + </td>
+        </tr>
+        <tr>
+            <td class=\vs\>VS</td>
+            <td class=\winner\>Team  + tournament.ThirdPlaceMatch.winner + </td>
+        </tr>
+        <tr>
+            <td class=\team\>Team  + tournament.ThirdPlaceMatch.teamid2 + "</td>
+            <td class=\white_span\>&nbsp;</td>
+        </tr>
+    </table>
 }
