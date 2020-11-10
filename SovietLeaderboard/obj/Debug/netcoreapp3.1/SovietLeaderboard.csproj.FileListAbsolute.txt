@@ -183,3 +183,17 @@ C:\Users\danil\Source\Repos\SovietLeaderboard\SovietLeaderboard\obj\Debug\netcor
 C:\Users\danil\Source\Repos\SovietLeaderboard\SovietLeaderboard\obj\Debug\netcoreapp3.1\Razor\Views\Team\EditTeam.cshtml.g.cs
 C:\Users\danil\Source\Repos\SovietLeaderboard\SovietLeaderboard\obj\Debug\netcoreapp3.1\SovietLeaderboard.csproj.CoreCompileInputs.cache
 C:\Users\danil\Source\Repos\SovietLeaderboard\SovietLeaderboard\obj\Debug\netcoreapp3.1\SovietLeaderboard.genruntimeconfig.cache
+C:\Users\danil\source\repos\SovietLeaderboard\SovietLeaderboard\obj\Debug\netcoreapp3.1\Razor\Views\LeaderBoard\TestView.cshtml.g.cs
+C:\Users\danil\source\repos\SovietLeaderboard\SovietLeaderboard\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
+C:\Users\danil\source\repos\SovietLeaderboard\SovietLeaderboard\bin\Debug\netcoreapp3.1\Google.Protobuf.dll
+C:\Users\danil\source\repos\SovietLeaderboard\SovietLeaderboard\bin\Debug\netcoreapp3.1\K4os.Compression.LZ4.dll
+C:\Users\danil\source\repos\SovietLeaderboard\SovietLeaderboard\bin\Debug\netcoreapp3.1\K4os.Compression.LZ4.Streams.dll
+C:\Users\danil\source\repos\SovietLeaderboard\SovietLeaderboard\bin\Debug\netcoreapp3.1\K4os.Hash.xxHash.dll
+C:\Users\danil\source\repos\SovietLeaderboard\SovietLeaderboard\bin\Debug\netcoreapp3.1\MySql.Data.dll
+C:\Users\danil\source\repos\SovietLeaderboard\SovietLeaderboard\bin\Debug\netcoreapp3.1\Ubiety.Dns.Core.dll
+C:\Users\danil\source\repos\SovietLeaderboard\SovietLeaderboard\bin\Debug\netcoreapp3.1\Zstandard.Net.dll
+C:\Users\danil\source\repos\SovietLeaderboard\SovietLeaderboard\bin\Debug\netcoreapp3.1\Renci.SshNet.dll
+C:\Users\danil\source\repos\SovietLeaderboard\SovietLeaderboard\bin\Debug\netcoreapp3.1\SshNet.Security.Cryptography.dll
+C:\Users\danil\source\repos\SovietLeaderboard\SovietLeaderboard\bin\Debug\netcoreapp3.1\System.Xml.XPath.XmlDocument.dll
+C:\Users\danil\source\repos\SovietLeaderboard\SovietLeaderboard\bin\Debug\netcoreapp3.1\DataAccessLayer.dll
+C:\Users\danil\source\repos\SovietLeaderboard\SovietLeaderboard\bin\Debug\netcoreapp3.1\DataAccessLayer.pdb

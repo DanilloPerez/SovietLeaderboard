@@ -1,12 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using DataAccessLayer;
+using Models;
 
-namespace DataAccessLayer
+
+
+
+namespace LogicLayer
 {
-    class LeaderboardManager
+    public class LeaderboardManager
     {
-        //AddLaptime(int UserID)
-        //InsertTeam(string TeamName)
+       public LeaderboardModel InsertLeaderBoard()
+        {
+            LeaderboardModel leaderboardModel = new LeaderboardModel();
+            LeaderboardDB leaderBoardDB = new LeaderboardDB();
+            return leaderboardModel;
+        }
     }
 }

@@ -2,19 +2,27 @@
 using System.Collections.Generic;
 using System.Text;
 
+
 namespace Models
 {
-   public class LeaderboardModel
+    public class LeaderboardModel
+
     {
-        public string LeaderBoardID { get; set; }
+        public enum LeaderboardType
+        {
+            Laptimes = 1,
+            Ladder = 2
+        }
+        
+        public string LeaderboardID { get; set; }
+       
+        public string LeaderBoardName { get; set; }
+       
+        public string LeaderBoardDescription { get; set; }
+        
         public string UserID { get; set; }
-        public LeaderboardType leaderboardtype { get; set; }
-    }
-    public enum LeaderboardType
-    {
-        Laptimes = 1,
-        TallyList = 2,
-        Ladder = 3
+        
+        public LeaderboardType leaderboardType { get; set; }
     }
 }
 

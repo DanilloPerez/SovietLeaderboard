@@ -12,9 +12,13 @@ namespace SovietLeaderboard.Models
         [Required]
         public string LeaderboardID { get; set; }
         [Required]
+        public string LeaderBoardName { get; set; }
+        [Required]
+        public string LeaderBoardDescription { get; set; } 
+        [Required]
         public string UserID { get; set; }
         [Required]
-        public LeaderboardType leaderboardType{ get; set; }
+        public LeaderboardTypes leaderboardType{ get; set; }
     }
     
 }

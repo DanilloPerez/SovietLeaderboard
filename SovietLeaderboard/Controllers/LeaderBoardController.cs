@@ -2,7 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using DataAccessLayer;
+using LogicLayer;
 using Microsoft.AspNetCore.Mvc;
+using Models;
+using SovietLeaderboard.Models;
 
 namespace SovietLeaderboard.Controllers
 {
@@ -20,8 +24,21 @@ namespace SovietLeaderboard.Controllers
         {
             return View();
         }
+        [HttpPost]
+        public IActionResult CreateLeaderBoardView(CreateLeaderboardViewModel createLeaderboardViewModel)
+        {
+            LeaderboardManager leaderBoardManager = new LeaderboardManager();
+            return View();
+           
+        }
+        [HttpGet]
         public IActionResult CreateLeaderBoardView()
         {
+            return View();
+        }
+        public IActionResult TestView()
+        {
+           
             return View();
         }
     }

@@ -1,5 +1,51 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model SovietLeaderboard.Models.CreateLeaderboardViewModel
+
 @{
+    ViewData["Title"] = "CreateLeaderBoardView";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
+
+<h1>CreateLeaderBoardView</h1>
+
+<h4>CreateLeaderboardViewModel</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="CreateLeaderBoardView">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="LeaderboardID" class="control-label"></label>
+                <input asp-for="LeaderboardID" class="form-control" />
+                <span asp-validation-for="LeaderboardID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LeaderBoardName" class="control-label"></label>
+                <input asp-for="LeaderBoardName" class="form-control" />
+                <span asp-validation-for="LeaderBoardName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LeaderBoardDescription" class="control-label"></label>
+                <input asp-for="LeaderBoardDescription" class="form-control" />
+                <span asp-validation-for="LeaderBoardDescription" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UserID" class="control-label"></label>
+                <input asp-for="UserID" class="form-control" />
+                <span asp-validation-for="UserID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="leaderboardType" class="control-label"></label>
+                <input asp-for="leaderboardType" class="form-control" />
+                <span asp-validation-for="leaderboardType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
