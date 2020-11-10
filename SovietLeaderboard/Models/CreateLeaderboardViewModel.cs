@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
+using static Models.LeaderboardModel;
 
 namespace SovietLeaderboard.Models
 {
@@ -18,7 +19,7 @@ namespace SovietLeaderboard.Models
         [Required]
         public string UserID { get; set; }
         [Required]
-        public LeaderboardTypes leaderboardType{ get; set; }
+        public LeaderboardType leaderboardType{ get; set; }
     }
     
 }

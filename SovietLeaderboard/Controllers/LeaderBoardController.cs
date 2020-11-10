@@ -27,7 +27,14 @@ namespace SovietLeaderboard.Controllers
         [HttpPost]
         public IActionResult CreateLeaderBoardView(CreateLeaderboardViewModel createLeaderboardViewModel)
         {
+            LeaderboardModel leaderboardModel = new LeaderboardModel();
+            leaderboardModel.LeaderBoardDescription = createLeaderboardViewModel.LeaderBoardDescription;
+            leaderboardModel.LeaderboardID = createLeaderboardViewModel.LeaderboardID;
+            leaderboardModel.LeaderBoardName = createLeaderboardViewModel.LeaderBoardName;
+            leaderboardModel.leaderboardType = createLeaderboardViewModel.leaderboardType;
+            leaderboardModel.UserID = createLeaderboardViewModel.UserID;
             LeaderboardManager leaderBoardManager = new LeaderboardManager();
+            leaderBoardManager.InsertLeaderBoard(leaderboardModel);
             return View();
            
         }
@@ -41,5 +48,6 @@ namespace SovietLeaderboard.Controllers
            
             return View();
         }
+       
     }
 }

@@ -18,7 +18,7 @@ namespace DataAccessLayer
                 new string[] {"@UserID",model.UserID},
                 new string[] {"@leaderboardType", model.leaderboardType.ToString() }
             };
-            sqlConnection.ExecuteNonSearchQueryParameters(" INSERT INTO LeaderBoard ('LeaderBoardID','UserID','LeaderboardType') VALUES ( @LeaderboardID , @UserID , @LeaderboardType)", param);
+            sqlConnection.ExecuteNonSearchQueryParameters(" INSERT INTO LeaderBoard (`LeaderBoardID`,`UserID`,`LeaderboardType`) VALUES ( @LeaderboardID , @UserID , @LeaderboardType )", param);
             return true;
         }
     }
