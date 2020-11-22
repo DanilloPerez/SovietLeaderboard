@@ -4,7 +4,18 @@ using System.Text;
 
 namespace Models
 {
-    class TallySheetModel
+    public class TallySheetModel
     {
+        
+            public string TallySheetID { get; set; }
+
+            public string TallySheetName { get; set; }
+
+            public string TallySheetDescription { get; set; }
+
+            //public string TallySheetID { get; set; }
+
+            
+        }
     }
-}
+

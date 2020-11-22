@@ -6653,11 +6653,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\danil\\source\\repos\\SovietLeaderboard\\DataAccessLayer\\DataAccessLayer.csproj",
+      "projectUniqueName": "C:\\Users\\danil\\Source\\Repos\\SovietLeaderboard\\DataAccessLayer\\DataAccessLayer.csproj",
       "projectName": "DataAccessLayer",
-      "projectPath": "C:\\Users\\danil\\source\\repos\\SovietLeaderboard\\DataAccessLayer\\DataAccessLayer.csproj",
+      "projectPath": "C:\\Users\\danil\\Source\\Repos\\SovietLeaderboard\\DataAccessLayer\\DataAccessLayer.csproj",
       "packagesPath": "C:\\Users\\danil\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\danil\\source\\repos\\SovietLeaderboard\\DataAccessLayer\\obj\\",
+      "outputPath": "C:\\Users\\danil\\Source\\Repos\\SovietLeaderboard\\DataAccessLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\danil\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6673,8 +6673,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\danil\\source\\repos\\SovietLeaderboard\\Models\\ModelsDTO.csproj": {
-              "projectPath": "C:\\Users\\danil\\source\\repos\\SovietLeaderboard\\Models\\ModelsDTO.csproj"
+            "C:\\Users\\danil\\Source\\Repos\\SovietLeaderboard\\Models\\ModelsDTO.csproj": {
+              "projectPath": "C:\\Users\\danil\\Source\\Repos\\SovietLeaderboard\\Models\\ModelsDTO.csproj"
             }
           }
         }

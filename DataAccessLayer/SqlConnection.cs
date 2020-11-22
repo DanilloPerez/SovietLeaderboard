@@ -11,7 +11,7 @@ namespace DataAccessLayer
 
         private MySqlConnection CreateConnection()
         {
-            MySqlConnection cnn;
+            MySqlConnection cnn = null;
             string connectionstring = $"server=185.182.57.161;database=tijnvcd415_SLB;uid=tijnvcd415_Danillo;pwd=12345678;";
             cnn = new MySqlConnection(connectionstring);
             return cnn;
@@ -26,16 +26,23 @@ namespace DataAccessLayer
                 CommandText = query,
                 Connection = cnn
             };
-            cnn.Open();
-            MySqlDataReader reader = cmd.ExecuteReader();
-            while (reader.Read())
+            try
             {
-                for (int i = 0; i < reader.FieldCount; i++)
+                cnn.Open();
+                MySqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
                 {
-                    readerResults.Add(reader[i].ToString());
+                    for (int i = 0; i < reader.FieldCount; i++)
+                    {
+                        readerResults.Add(reader[i].ToString());
+                    }
                 }
             }
-            cnn.Close();
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+                cnn.Close();
+            }
             return readerResults;
         }
 
@@ -46,15 +53,23 @@ namespace DataAccessLayer
             MySqlCommand cmd = GenerateCommand(query, cnn);
             cmd = AddParameters(cmd, parameters);
             cnn.Open();
-            MySqlDataReader reader = cmd.ExecuteReader();
-            while (reader.Read())
+            try
             {
-                for (int i = 0; i < reader.FieldCount; i++)
+                
+                MySqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
                 {
-                    readerResults.Add(reader[i].ToString());
+                    for (int i = 0; i < reader.FieldCount; i++)
+                    {
+                        readerResults.Add(reader[i].ToString());
+                    }
                 }
             }
-            cnn.Close();
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+                cnn.Close();
+            }
             return readerResults;
         }
 
@@ -63,8 +78,15 @@ namespace DataAccessLayer
             MySqlConnection cnn = CreateConnection();
             MySqlCommand cmd = GenerateCommand(query, cnn);
             cnn.Open();
-            cmd.ExecuteNonQuery();
-            cnn.Close();
+            try
+            {               
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+                cnn.Close();
+            }
         }
 
         public void ExecuteNonSearchQueryParameters(string query, List<string[]> parameters)
@@ -73,8 +95,14 @@ namespace DataAccessLayer
             MySqlCommand cmd = GenerateCommand(query, cnn);
             cmd = AddParameters(cmd, parameters);
             cnn.Open();
-            cmd.ExecuteNonQuery();
-            cnn.Close();
+            try
+            {               
+                cmd.ExecuteNonQuery();
+            }
+            catch
+            {
+                cnn.Close();
+            }
         }
 
         public List<string> ExecuteGetStringQuery(string query)
@@ -85,17 +113,24 @@ namespace DataAccessLayer
             cmd.CommandText = query;
             cmd.Connection = cnn;
             cnn.Open();
-            MySqlDataReader reader = cmd.ExecuteReader();
-            readerResults.Clear();
-            while (reader.Read())
+            try
             {
-
-                for (int i = 0; i < reader.FieldCount; i++)
+                
+                MySqlDataReader reader = cmd.ExecuteReader();
+                readerResults.Clear();
+                while (reader.Read())
                 {
-                    readerResults.Add(reader.GetString(i));
+
+                    for (int i = 0; i < reader.FieldCount; i++)
+                    {
+                        readerResults.Add(reader.GetString(i));
+                    }
                 }
             }
-            cnn.Close();
+            catch
+            {
+                cnn.Close();
+            }
             return readerResults;
         }
 

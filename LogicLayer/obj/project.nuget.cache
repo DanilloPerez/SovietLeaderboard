@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iI5ZSNM2mMdS2QNLRyvZWgbArugbMC7mlNc0rxiUhXoKsMDxdhlGvYfacK4iCdWI9koK112oPecUpqF1oSF7QQ==",
+  "dgSpecHash": "64S2wF+L+SYwX/UzRTroZtC67pAJr5TsYgLIqbblPxWZWuFSuPtSTUWGJbJY3KjhlgHeCgiNuAcGL3UwWEx6rQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\danil\\source\\repos\\SovietLeaderboard\\LogicLayer\\LogicLayer.csproj",
+  "projectFilePath": "C:\\Users\\danil\\Source\\Repos\\SovietLeaderboard\\LogicLayer\\LogicLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\danil\\.nuget\\packages\\bouncycastle.netcore\\1.8.3\\bouncycastle.netcore.1.8.3.nupkg.sha512",
     "C:\\Users\\danil\\.nuget\\packages\\entityframework\\6.1.0\\entityframework.6.1.0.nupkg.sha512",

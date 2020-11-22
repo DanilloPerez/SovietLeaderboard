@@ -1,5 +1,45 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model SovietLeaderboard.Models.CreateTournamentViewModel
+
 @{
+    ViewData["Title"] = "CreateTournamentView";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<h1>CreateTournamentView</h1>
+
+<h4>CreateTournamentViewModel</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="CreateTournamentView">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="TournamentID" class="control-label"></label>
+                <input asp-for="TournamentID" class="form-control" />
+                <span asp-validation-for="TournamentID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TournamentName" class="control-label"></label>
+                <input asp-for="TournamentName" class="form-control" />
+                <span asp-validation-for="TournamentName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TournamentDescription" class="control-label"></label>
+                <input asp-for="TournamentDescription" class="form-control" />
+                <span asp-validation-for="TournamentDescription" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UserID" class="control-label"></label>
+                <input asp-for="UserID" class="form-control" />
+                <span asp-validation-for="UserID" class="text-danger"></span>
+            </div>
+           
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>

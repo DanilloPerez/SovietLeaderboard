@@ -6,6 +6,7 @@ using DataAccessLayer;
 using LogicLayer;
 using Microsoft.AspNetCore.Mvc;
 using Models;
+using ModelsDTO;
 using SovietLeaderboard.Models;
 
 namespace SovietLeaderboard.Controllers
@@ -36,12 +37,32 @@ namespace SovietLeaderboard.Controllers
             LeaderboardManager leaderBoardManager = new LeaderboardManager();
             leaderBoardManager.InsertLeaderBoard(leaderboardModel);
             return View();
-           
+
         }
         [HttpGet]
         public IActionResult CreateLeaderBoardView()
         {
             return View();
+        }
+        [HttpPost]
+        public IActionResult EditLeaderBoardView(LeaderboardViewModel leaderboardViewModel)
+        {
+            LeaderboardModel leaderboardModel = new LeaderboardModel();
+            leaderboardModel.LeaderBoardDescription = leaderboardViewModel.LeaderBoardDescription;
+            leaderboardModel.LeaderboardID = leaderboardViewModel.LeaderboardID;
+            leaderboardModel.LeaderBoardName = leaderboardViewModel.LeaderBoardName;
+            leaderboardModel.UserID = leaderboardViewModel.UserID;
+            LeaderboardManager leaderBoardManager = new LeaderboardManager();
+            leaderBoardManager.EditLeaderBoard(leaderboardModel);
+            return View();
+        }
+        [HttpGet]
+        public  IActionResult EditLeaderBoardView()
+        {
+            LeaderboardManager leaderBoardManager = new LeaderboardManager();
+           
+            List <LeaderBoardEntryModel> LBEM = leaderBoardManager.GetLeaderBoardEntries("1");
+            return View(LBEM);
         }
         public IActionResult TestView()
         {
