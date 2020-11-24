@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 
 
-namespace Models
+namespace ModelsDTO
 {
     public class LeaderboardModel
 

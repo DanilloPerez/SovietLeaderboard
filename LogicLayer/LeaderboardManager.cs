@@ -1,5 +1,4 @@
 ﻿using DataAccessLayer;
-using Models;
 using ModelsDTO;
 using System.Collections.Generic;
 
@@ -8,15 +7,15 @@ namespace LogicLayer
     public class LeaderboardManager
     {
         private readonly LeaderboardDB leaderBoardDB = new LeaderboardDB();
-        public LeaderboardModel InsertLeaderBoard(LeaderboardModel leaderboardModel)
+        public LeaderBoardEntryModel InsertLeaderBoard(LeaderBoardEntryModel LeaderboardModel)
         {
-            
-            leaderBoardDB.AddLeaderBoard(leaderboardModel);
-            return leaderboardModel;
+            //TODO FIX
+            //leaderBoardDB.AddLeaderBoard(LeaderboardModel);
+            //return LeaderboardModel;
+            return null;
         }
         public LeaderboardModel EditLeaderBoard(LeaderboardModel leaderboardModel)
         {
-           
             leaderBoardDB.EditLeaderBoard(leaderboardModel);
             return leaderboardModel;
         }
@@ -24,6 +23,11 @@ namespace LogicLayer
         {
            return leaderBoardDB.GetLeaderBoardEntries(LeaderBoardID);          
         }
-        
+
+        public List<LeaderboardModel> GetLeaderBoards()
+        {
+            return leaderBoardDB.GetLeaderBoards();
+        }
+
     }
 }

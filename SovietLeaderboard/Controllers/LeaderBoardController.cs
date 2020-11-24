@@ -25,10 +25,10 @@ namespace SovietLeaderboard.Controllers
         {
             return View();
         }
-        [HttpPost]
+        /*[HttpPost]
         public IActionResult CreateLeaderBoardView(CreateLeaderboardViewModel createLeaderboardViewModel)
         {
-            LeaderboardModel leaderboardModel = new LeaderboardModel();
+            LeaderboardEntryModel leaderboardModel = new LeaderboardEntryModel();
             leaderboardModel.LeaderBoardDescription = createLeaderboardViewModel.LeaderBoardDescription;
             leaderboardModel.LeaderboardID = createLeaderboardViewModel.LeaderboardID;
             leaderboardModel.LeaderBoardName = createLeaderboardViewModel.LeaderBoardName;
@@ -38,37 +38,52 @@ namespace SovietLeaderboard.Controllers
             leaderBoardManager.InsertLeaderBoard(leaderboardModel);
             return View();
 
-        }
+        }*/
         [HttpGet]
         public IActionResult CreateLeaderBoardView()
         {
             return View();
         }
         [HttpPost]
-        public IActionResult EditLeaderBoardView(LeaderboardViewModel leaderboardViewModel)
+        public IActionResult EditLeaderBoardView(CreateLeaderboardViewModel CreateleaderboardViewModel)
         {
-            LeaderboardModel leaderboardModel = new LeaderboardModel();
-            leaderboardModel.LeaderBoardDescription = leaderboardViewModel.LeaderBoardDescription;
-            leaderboardModel.LeaderboardID = leaderboardViewModel.LeaderboardID;
-            leaderboardModel.LeaderBoardName = leaderboardViewModel.LeaderBoardName;
-            leaderboardModel.UserID = leaderboardViewModel.UserID;
+            /*LeaderBoardEntryModel leaderboardentryModel = new LeaderBoardEntryModel();
+            
+            leaderboardentryModel.LeaderBoardID = CreateleaderboardViewModel.LeaderboardID;
+            leaderboardentryModel.LeaderBoardScore = CreateleaderboardViewModel.LeaderBoardScore;
+            leaderboardentryModel.UserID = CreateleaderboardViewModel.UserID;
             LeaderboardManager leaderBoardManager = new LeaderboardManager();
-            leaderBoardManager.EditLeaderBoard(leaderboardModel);
+            leaderBoardManager.EditLeaderBoard(leaderboardentryModel);*/
             return View();
         }
         [HttpGet]
-        public  IActionResult EditLeaderBoardView()
+        public  IActionResult EditLeaderBoardView(string LeaderBoardID)
         {
             LeaderboardManager leaderBoardManager = new LeaderboardManager();
-           
-            List <LeaderBoardEntryModel> LBEM = leaderBoardManager.GetLeaderBoardEntries("1");
+            List<LeaderBoardEntryModel> LBEM = leaderBoardManager.GetLeaderBoardEntries(LeaderBoardID);
             return View(LBEM);
         }
+        [HttpGet]
         public IActionResult TestView()
         {
-           
-            return View();
+            LeaderboardManager leaderboardManager = new LeaderboardManager();
+
+            List<LeaderboardModel> leaderboardViewModels = GetLeaderBoards();
+            /*CreateLeaderboardViewModel CLVM = new CreateLeaderboardViewModel();
+            CLVM.LeaderBoardDescription = ("not for xander");
+            CLVM.LeaderboardID = ("1");
+            CLVM.LeaderBoardName = ("BigBoiLeaderBoard");
+            CLVM.leaderboardType = LeaderboardType.Laptimes;
+            leaderboardViewModels.Add(CLVM);*/
+
+            return View(leaderboardViewModels);
         }
-       
+        //[HttpGet]
+        public List<LeaderboardModel> GetLeaderBoards()
+        {
+            LeaderboardManager leaderboardManager = new LeaderboardManager();
+            return leaderboardManager.GetLeaderBoards();
+        }
+
     }
 }

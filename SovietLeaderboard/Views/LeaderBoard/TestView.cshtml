@@ -1,4 +1,4 @@
-﻿@model IEnumerable<SovietLeaderboard.Models.CreateLeaderboardViewModel>
+﻿@model IEnumerable<ModelsDTO.LeaderboardModel>
 
 @{
     ViewData["Title"] = "View";
@@ -50,7 +50,7 @@
                 @Html.DisplayFor(modelItem => item.leaderboardType)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("View", "EditLeaderBoardView", new { LeaderBoardID = item.LeaderboardID }) |
                 @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
                 @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
             </td>

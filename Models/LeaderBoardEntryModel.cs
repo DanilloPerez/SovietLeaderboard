@@ -9,6 +9,5 @@ namespace ModelsDTO
         public string LeaderBoardID { get; set; }
         public string LeaderBoardScore { get; set; }
         public string UserID { get; set; }
-        
     }
 }
