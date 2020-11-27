@@ -95,6 +95,12 @@ namespace SovietLeaderboard.Controllers
             leaderboardManager.AddLeaderBoard(leaderboardmodel);
             return View();
         }
+        [HttpPost]
+        public IActionResult EditLeaderboardView(LeaderboardModel leaderboardmodel)
+        {
+            leaderboardManager.EditLeaderBoard(leaderboardmodel);
+            return View();
+        }
 
     }
 }
