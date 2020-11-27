@@ -7,12 +7,12 @@ namespace LogicLayer
     public class LeaderboardManager
     {
         private readonly LeaderboardDB leaderBoardDB = new LeaderboardDB();
-        public LeaderBoardEntryModel InsertLeaderBoard(LeaderBoardEntryModel LeaderboardModel)
+
+
+        public LeaderboardModel AddLeaderBoard(LeaderboardModel leaderboardModel)
         {
-            //TODO FIX
-            //leaderBoardDB.AddLeaderBoard(LeaderboardModel);
-            //return LeaderboardModel;
-            return null;
+            leaderBoardDB.AddLeaderBoard(leaderboardModel);
+            return leaderboardModel;
         }
         public LeaderboardModel EditLeaderBoard(LeaderboardModel leaderboardModel)
         {

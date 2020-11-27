@@ -10,18 +10,20 @@ namespace DataAccessLayer
     public class LeaderboardDB
     {
         private SqlConnection sqlConnection = new SqlConnection();
-        /*public bool AddLeaderBoard(LeaderboardModel model)
+        public bool AddLeaderBoard(LeaderboardModel model)
         {
 
             List<string[]> param = new List<string[]>()
             {
-                new string[] {"@LeaderBoardID",model.LeaderBoardID },
-                new string[] {"@UserID",model.UserID},
-                new string[] {"@leaderboardType", model.LeaderBoardScore }
+                new string[] {"@LeaderBoardID",model.LeaderboardID },
+                new string[] {"@OwnerID",model.UserID},
+                new string[] {"@leaderboardType", ((int)model.leaderboardType).ToString() },
+                new string[] {"@LeaderBoardName",model.LeaderBoardName},
+                new string[] {"@LeaderBoardDescription",model.LeaderBoardDescription }
             };
-            sqlConnection.ExecuteNonSearchQueryParameters(" INSERT INTO LeaderBoard (`LeaderBoardID`,`UserID`,`LeaderboardType`) VALUES ( @LeaderboardID , @UserID , @LeaderboardType )", param);
+            sqlConnection.ExecuteNonSearchQueryParameters(" INSERT INTO LeaderBoards (`LeaderBoardID`,`OwnerID`,`LeaderBoardType`,`LeaderBoardName`,`LeaderBoardDescription`) VALUES ( @LeaderboardID , @OwnerID , @LeaderboardType, @LeaderBoardName, @LeaderBoardDescription )", param);
             return true;
-        }*/
+        }
 
         public bool EditLeaderBoard(LeaderboardModel model)
         {

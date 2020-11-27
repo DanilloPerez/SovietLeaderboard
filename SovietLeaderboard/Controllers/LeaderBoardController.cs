@@ -13,7 +13,9 @@ namespace SovietLeaderboard.Controllers
 {
     public class LeaderBoardController : Controller
     {
-        public IActionResult LeaderboardView()
+        private readonly LeaderboardManager leaderboardManager = new LeaderboardManager();
+
+        public IActionResult EditLeaderboardView()
         {
             return View();
         }
@@ -39,13 +41,9 @@ namespace SovietLeaderboard.Controllers
             return View();
 
         }*/
-        [HttpGet]
-        public IActionResult CreateLeaderBoardView()
-        {
-            return View();
-        }
+       
         [HttpPost]
-        public IActionResult EditLeaderBoardView(CreateLeaderboardViewModel CreateleaderboardViewModel)
+        public IActionResult LeaderBoardView(CreateLeaderboardViewModel CreateleaderboardViewModel)
         {
             /*LeaderBoardEntryModel leaderboardentryModel = new LeaderBoardEntryModel();
             
@@ -57,22 +55,22 @@ namespace SovietLeaderboard.Controllers
             return View();
         }
         [HttpGet]
-        public  IActionResult EditLeaderBoardView(string LeaderBoardID)
+        public  IActionResult LeaderBoardView(string LeaderBoardID)
         {
-            LeaderboardManager leaderBoardManager = new LeaderboardManager();
-            List<LeaderBoardEntryModel> LBEM = leaderBoardManager.GetLeaderBoardEntries(LeaderBoardID);
+            
+            List<LeaderBoardEntryModel> LBEM = leaderboardManager.GetLeaderBoardEntries(LeaderBoardID);
             return View(LBEM);
         }
         [HttpGet]
         public IActionResult TestView()
         {
-            LeaderboardManager leaderboardManager = new LeaderboardManager();
+           
 
             List<LeaderboardModel> leaderboardViewModels = GetLeaderBoards();
             /*CreateLeaderboardViewModel CLVM = new CreateLeaderboardViewModel();
-            CLVM.LeaderBoardDescription = ("not for xander");
+            CLVM.LeaderBoardDescription = ("TestLeaderBoard");
             CLVM.LeaderboardID = ("1");
-            CLVM.LeaderBoardName = ("BigBoiLeaderBoard");
+            CLVM.LeaderBoardName = ("TestLeaderBoard");
             CLVM.leaderboardType = LeaderboardType.Laptimes;
             leaderboardViewModels.Add(CLVM);*/
 
@@ -81,8 +79,21 @@ namespace SovietLeaderboard.Controllers
         //[HttpGet]
         public List<LeaderboardModel> GetLeaderBoards()
         {
-            LeaderboardManager leaderboardManager = new LeaderboardManager();
+           
             return leaderboardManager.GetLeaderBoards();
+        }
+        [HttpGet]
+        public IActionResult CreateLeaderBoardView()
+        {
+            
+            return View();
+
+        }
+        [HttpPost]
+        public IActionResult CreateLeaderBoardView(LeaderboardModel leaderboardmodel) 
+        {
+            leaderboardManager.AddLeaderBoard(leaderboardmodel);
+            return View();
         }
 
     }

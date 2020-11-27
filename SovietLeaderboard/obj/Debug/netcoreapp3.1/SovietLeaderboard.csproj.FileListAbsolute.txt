@@ -196,6 +196,7 @@ C:\Users\danil\source\repos\SovietLeaderboard\SovietLeaderboard\bin\Debug\netcor
 C:\Users\danil\source\repos\SovietLeaderboard\SovietLeaderboard\bin\Debug\netcoreapp3.1\System.Xml.XPath.XmlDocument.dll
 C:\Users\danil\source\repos\SovietLeaderboard\SovietLeaderboard\bin\Debug\netcoreapp3.1\DataAccessLayer.dll
 C:\Users\danil\source\repos\SovietLeaderboard\SovietLeaderboard\bin\Debug\netcoreapp3.1\DataAccessLayer.pdb
-C:\Users\danil\Source\Repos\SovietLeaderboard\SovietLeaderboard\obj\Debug\netcoreapp3.1\Razor\Views\LeaderBoard\EditLeaderboardView.cshtml.g.cs
 C:\Users\danil\Source\Repos\SovietLeaderboard\SovietLeaderboard\obj\Debug\netcoreapp3.1\Razor\Views\TallySheet\CreateTallySheetView.cshtml.g.cs
 C:\Users\danil\Source\Repos\SovietLeaderboard\SovietLeaderboard\obj\Debug\netcoreapp3.1\Razor\Views\TallySheet\EditTallySheetView.cshtml.g.cs
+C:\Users\danil\Source\Repos\SovietLeaderboard\SovietLeaderboard\obj\Debug\netcoreapp3.1\Razor\Views\LeaderBoard\LeaderBoardView.cshtml.g.cs
+C:\Users\danil\Source\Repos\SovietLeaderboard\SovietLeaderboard\obj\Debug\netcoreapp3.1\Razor\Views\LeaderBoard\EditLeaderboardView.cshtml.g.cs
