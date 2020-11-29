@@ -28,6 +28,10 @@ namespace LogicLayer
         {
             return leaderBoardDB.GetLeaderBoards();
         }
+        public void DeleteLeaderBoard(string leaderboardID)
+        {
+            leaderBoardDB.DeleteLeaderBoard(leaderboardID);
+        }
 
     }
 }

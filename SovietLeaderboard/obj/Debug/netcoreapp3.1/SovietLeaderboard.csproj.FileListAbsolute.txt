@@ -200,3 +200,4 @@ C:\Users\danil\Source\Repos\SovietLeaderboard\SovietLeaderboard\obj\Debug\netcor
 C:\Users\danil\Source\Repos\SovietLeaderboard\SovietLeaderboard\obj\Debug\netcoreapp3.1\Razor\Views\TallySheet\EditTallySheetView.cshtml.g.cs
 C:\Users\danil\Source\Repos\SovietLeaderboard\SovietLeaderboard\obj\Debug\netcoreapp3.1\Razor\Views\LeaderBoard\LeaderBoardView.cshtml.g.cs
 C:\Users\danil\Source\Repos\SovietLeaderboard\SovietLeaderboard\obj\Debug\netcoreapp3.1\Razor\Views\LeaderBoard\EditLeaderboardView.cshtml.g.cs
+C:\Users\danil\Source\Repos\SovietLeaderboard\SovietLeaderboard\obj\Debug\netcoreapp3.1\Razor\Views\LeaderBoard\DeleteLeaderboardView.cshtml.g.cs

@@ -52,7 +52,7 @@
             <td>
                 @Html.ActionLink("View", "LeaderBoardView", new { LeaderBoardID = item.LeaderboardID }) |
                 @Html.ActionLink("Edit", "EditLeaderBoardView", new { LeaderBoardID = item.LeaderboardID }) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                @Html.ActionLink("Delete", "DeleteLeaderBoardView", new { LeaderBoardID = item.LeaderboardID })
             </td>
         </tr>
 }

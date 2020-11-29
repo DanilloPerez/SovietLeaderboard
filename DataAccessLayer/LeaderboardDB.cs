@@ -35,7 +35,7 @@ namespace DataAccessLayer
                 new string[] { "@LeaderBoardName", model.LeaderBoardName },
                 new string[] { "@LeaderBoardDescription", model.LeaderBoardDescription }
              };
-            sqlConnection.ExecuteNonSearchQueryParameters(" UPDATE LeaderBoards SET `LeaderBoardID` = @LeaderboardID,`OwnerID`= @OwnerID ,`LeaderBoardType` = @LeaderboardType ,`LeaderBoardName` =  @LeaderBoardName ,`LeaderBoardDescription` = @LeaderBoardDescription WHERE `LeaderBoardID` = @LeaderBoardID" , param);
+            sqlConnection.ExecuteNonSearchQueryParameters(" UPDATE LeaderBoards SET `LeaderBoardID` = @LeaderboardID,`OwnerID`= @OwnerID ,`LeaderBoardType` = @LeaderboardType ,`LeaderBoardName` =  @LeaderBoardName ,`LeaderBoardDescription` = @LeaderBoardDescription WHERE `LeaderBoardID` = @LeaderBoardID", param);
             return true;
         }
         public List<LeaderBoardEntryModel> GetLeaderBoardEntries(string LeaderboardID)
@@ -78,6 +78,15 @@ namespace DataAccessLayer
 
             return Leaderboards;
         }
-
+        public void DeleteLeaderBoard(string leaderboardID)
+        {
+            List<string[]> param = new List<string[]>()
+            {
+                new string[] { "@LeaderBoardID", leaderboardID },
+             };
+            sqlConnection.ExecuteNonSearchQueryParameters("DELETE FROM LeaderBoards WHERE `LeaderBoardID` = @LeaderBoardID", param);       
+        }
     }
+
 }
+

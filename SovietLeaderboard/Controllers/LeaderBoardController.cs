@@ -101,6 +101,12 @@ namespace SovietLeaderboard.Controllers
             leaderboardManager.EditLeaderBoard(leaderboardmodel);
             return View();
         }
-
+        [HttpGet]
+        public ActionResult DeleteLeaderboardView(string leaderboardID)
+        {
+            leaderboardManager.DeleteLeaderBoard(leaderboardID);
+            TestView();
+            return Redirect("TestView");
+        }
     }
 }
