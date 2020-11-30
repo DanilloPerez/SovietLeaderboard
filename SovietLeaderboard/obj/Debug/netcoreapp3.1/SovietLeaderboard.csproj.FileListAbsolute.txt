@@ -179,10 +179,8 @@ C:\Users\danil\Source\Repos\SovietLeaderboard\SovietLeaderboard\bin\Debug\netcor
 C:\Users\danil\Source\Repos\SovietLeaderboard\SovietLeaderboard\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\danil\Source\Repos\SovietLeaderboard\SovietLeaderboard\obj\Debug\netcoreapp3.1\SovietLeaderboard.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\danil\Source\Repos\SovietLeaderboard\SovietLeaderboard\obj\Debug\netcoreapp3.1\SovietLeaderboard.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\danil\Source\Repos\SovietLeaderboard\SovietLeaderboard\obj\Debug\netcoreapp3.1\Razor\Views\Team\EditTeam.cshtml.g.cs
 C:\Users\danil\Source\Repos\SovietLeaderboard\SovietLeaderboard\obj\Debug\netcoreapp3.1\SovietLeaderboard.csproj.CoreCompileInputs.cache
 C:\Users\danil\Source\Repos\SovietLeaderboard\SovietLeaderboard\obj\Debug\netcoreapp3.1\SovietLeaderboard.genruntimeconfig.cache
-C:\Users\danil\source\repos\SovietLeaderboard\SovietLeaderboard\obj\Debug\netcoreapp3.1\Razor\Views\LeaderBoard\TestView.cshtml.g.cs
 C:\Users\danil\source\repos\SovietLeaderboard\SovietLeaderboard\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
 C:\Users\danil\source\repos\SovietLeaderboard\SovietLeaderboard\bin\Debug\netcoreapp3.1\Google.Protobuf.dll
 C:\Users\danil\source\repos\SovietLeaderboard\SovietLeaderboard\bin\Debug\netcoreapp3.1\K4os.Compression.LZ4.dll
@@ -196,8 +194,10 @@ C:\Users\danil\source\repos\SovietLeaderboard\SovietLeaderboard\bin\Debug\netcor
 C:\Users\danil\source\repos\SovietLeaderboard\SovietLeaderboard\bin\Debug\netcoreapp3.1\System.Xml.XPath.XmlDocument.dll
 C:\Users\danil\source\repos\SovietLeaderboard\SovietLeaderboard\bin\Debug\netcoreapp3.1\DataAccessLayer.dll
 C:\Users\danil\source\repos\SovietLeaderboard\SovietLeaderboard\bin\Debug\netcoreapp3.1\DataAccessLayer.pdb
-C:\Users\danil\Source\Repos\SovietLeaderboard\SovietLeaderboard\obj\Debug\netcoreapp3.1\Razor\Views\TallySheet\CreateTallySheetView.cshtml.g.cs
-C:\Users\danil\Source\Repos\SovietLeaderboard\SovietLeaderboard\obj\Debug\netcoreapp3.1\Razor\Views\TallySheet\EditTallySheetView.cshtml.g.cs
 C:\Users\danil\Source\Repos\SovietLeaderboard\SovietLeaderboard\obj\Debug\netcoreapp3.1\Razor\Views\LeaderBoard\LeaderBoardView.cshtml.g.cs
 C:\Users\danil\Source\Repos\SovietLeaderboard\SovietLeaderboard\obj\Debug\netcoreapp3.1\Razor\Views\LeaderBoard\EditLeaderboardView.cshtml.g.cs
 C:\Users\danil\Source\Repos\SovietLeaderboard\SovietLeaderboard\obj\Debug\netcoreapp3.1\Razor\Views\LeaderBoard\DeleteLeaderboardView.cshtml.g.cs
+C:\Users\danil\Source\Repos\SovietLeaderboard\SovietLeaderboard\obj\Debug\netcoreapp3.1\Razor\Views\LeaderBoard\LeaderBoardsView.cshtml.g.cs
+C:\Users\danil\Source\Repos\SovietLeaderboard\SovietLeaderboard\obj\Debug\netcoreapp3.1\Razor\Views\Team\DeleteTeamView.cshtml.g.cs
+C:\Users\danil\Source\Repos\SovietLeaderboard\SovietLeaderboard\obj\Debug\netcoreapp3.1\Razor\Views\Team\TeamsView.cshtml.g.cs
+C:\Users\danil\Source\Repos\SovietLeaderboard\SovietLeaderboard\obj\Debug\netcoreapp3.1\Razor\Views\Team\EditTeamView.cshtml.g.cs

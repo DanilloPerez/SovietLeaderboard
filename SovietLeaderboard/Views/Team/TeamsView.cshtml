@@ -1,0 +1,54 @@
+﻿@model IEnumerable<ModelsDTO.TeamModel>
+
+@{
+    ViewData["Title"] = "TeamsView";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>TeamsView</h1>
+
+<p>
+    <a asp-action="CreateTeamView">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.TeamID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TeamDescription)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TeamName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OwnerID)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TeamID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TeamDescription)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TeamName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OwnerID)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "EditTeamView", new { TeamID = item.TeamID }) |
+                @Html.ActionLink("Details", "TeamView", new { TeamID = item.TeamID }) |
+                @Html.ActionLink("Delete", "DeleteTeamView", new { TeamID = item.TeamID })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
