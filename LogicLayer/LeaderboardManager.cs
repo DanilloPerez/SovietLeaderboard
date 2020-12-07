@@ -6,7 +6,7 @@ namespace LogicLayer
 {
     public class LeaderboardManager : ILeaderboardManager
     {
-        private readonly ILeaderboardDB leaderBoardDB = new LeaderboardDB();
+        private readonly ILeaderboardDB leaderBoardDB = new DALFactory().leaderboardDB();
 
 
         public LeaderboardModel AddLeaderBoard(LeaderboardModel leaderboardModel)

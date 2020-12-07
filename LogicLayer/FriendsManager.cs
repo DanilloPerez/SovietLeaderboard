@@ -1,4 +1,5 @@
 ﻿using DataAccessLayer;
+using Interfaces;
 using ModelsDTO;
 using System;
 using System.Collections.Generic;
@@ -8,7 +9,7 @@ namespace LogicLayer
 {
     public class FriendsManager : IFriendsManager
     {
-        private readonly IFriendsDB friendsDB = new FriendsDB();
+        private readonly IFriendsDB friendsDB = new DALFactory().FriendsDB();
 
         public FriendsModel AddFriends(FriendsModel Model)
         {

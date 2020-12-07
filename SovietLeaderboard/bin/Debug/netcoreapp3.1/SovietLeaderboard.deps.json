@@ -2650,6 +2650,7 @@
       },
       "DataAccessLayer/1.0.0": {
         "dependencies": {
+          "Interfaces": "1.0.0",
           "ModelsDTO": "1.0.0",
           "MySql.Data": "8.0.21"
         },
@@ -2658,6 +2659,17 @@
         },
         "compile": {
           "DataAccessLayer.dll": {}
+        }
+      },
+      "Interfaces/1.0.0": {
+        "dependencies": {
+          "ModelsDTO": "1.0.0"
+        },
+        "runtime": {
+          "Interfaces.dll": {}
+        },
+        "compile": {
+          "Interfaces.dll": {}
         }
       },
       "LogicLayer/1.0.0": {
@@ -5600,6 +5612,11 @@
       "hashPath": "system.xml.xpath.xmldocument.4.0.1.nupkg.sha512"
     },
     "DataAccessLayer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Interfaces/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

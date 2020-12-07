@@ -12,3 +12,5 @@ C:\Users\danil\source\repos\SovietLeaderboard\LogicLayer\bin\Debug\netcoreapp3.1
 C:\Users\danil\source\repos\SovietLeaderboard\LogicLayer\bin\Debug\netcoreapp3.1\DataAccessLayer.pdb
 C:\Users\danil\source\repos\SovietLeaderboard\LogicLayer\bin\Debug\netcoreapp3.1\ModelsDTO.pdb
 C:\Users\danil\source\repos\SovietLeaderboard\LogicLayer\obj\Debug\netcoreapp3.1\LogicLayer.csproj.CopyComplete
+C:\Users\danil\Source\Repos\SovietLeaderboard\LogicLayer\bin\Debug\netcoreapp3.1\Interfaces.dll
+C:\Users\danil\Source\Repos\SovietLeaderboard\LogicLayer\bin\Debug\netcoreapp3.1\Interfaces.pdb

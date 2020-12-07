@@ -12,7 +12,7 @@ namespace SovietLeaderboard.Controllers
 {
     public class TeamController : Controller
     {
-        private readonly TeamManager teamManager = new TeamManager();
+        private readonly ITeamManager teamManager = new LogicFactory().TeamManager();
         [HttpGet]
         public IActionResult TeamView(string TeamID)
         {

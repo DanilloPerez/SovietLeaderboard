@@ -13,7 +13,7 @@ namespace SovietLeaderboard.Controllers
 {
     public class LeaderBoardController : Controller
     {
-        private readonly LeaderboardManager leaderboardManager = new LeaderboardManager();
+        private readonly ILeaderboardManager leaderboardManager = new LogicFactory().LeaderboardManager();
 
         [HttpGet]
         public IActionResult LeaderBoardView(string LeaderBoardID)

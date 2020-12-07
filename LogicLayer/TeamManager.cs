@@ -9,7 +9,7 @@ namespace LogicLayer
 {
     public class TeamManager : ITeamManager
     {
-        private readonly ITeamDB teamDB = new TeamDB();
+        private readonly ITeamDB teamDB = new DALFactory().teamDB();
 
         public TeamModel CreateTeam(TeamModel createteamModel)
         {
