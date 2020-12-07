@@ -3062,6 +3062,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
+          "Interfaces": "1.0.0",
           "ModelsDTO": "1.0.0",
           "MySql.Data": "8.0.21"
         },
@@ -3070,6 +3071,19 @@
         },
         "runtime": {
           "bin/placeholder/DataAccessLayer.dll": {}
+        }
+      },
+      "Interfaces/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "ModelsDTO": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Interfaces.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Interfaces.dll": {}
         }
       },
       "LogicLayer/1.0.0": {
@@ -9837,6 +9851,11 @@
       "type": "project",
       "path": "../DataAccessLayer/DataAccessLayer.csproj",
       "msbuildProject": "../DataAccessLayer/DataAccessLayer.csproj"
+    },
+    "Interfaces/1.0.0": {
+      "type": "project",
+      "path": "../Interfaces/Interfaces.csproj",
+      "msbuildProject": "../Interfaces/Interfaces.csproj"
     },
     "LogicLayer/1.0.0": {
       "type": "project",

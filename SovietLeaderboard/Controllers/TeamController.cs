@@ -41,7 +41,7 @@ namespace SovietLeaderboard.Controllers
         public IActionResult DeleteTeamView(string TeamID)
         {
             teamManager.DeleteTeams(TeamID);
-           
+
             return Redirect("TeamsView");
         }
         [HttpPost]
@@ -56,6 +56,6 @@ namespace SovietLeaderboard.Controllers
         {
             return View();
         }
-        
+
     }
 }

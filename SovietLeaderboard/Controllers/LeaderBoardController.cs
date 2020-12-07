@@ -42,7 +42,8 @@ namespace SovietLeaderboard.Controllers
         public IActionResult CreateLeaderBoardView(LeaderboardModel leaderboardmodel)
         {
             leaderboardManager.AddLeaderBoard(leaderboardmodel);
-            return View();
+            LeaderBoardsView();
+            return Redirect("LeaderBoardsView");
         }
         [HttpGet]
         public IActionResult EditLeaderboardView()
@@ -53,14 +54,15 @@ namespace SovietLeaderboard.Controllers
         public IActionResult EditLeaderboardView(LeaderboardModel leaderboardmodel)
         {
             leaderboardManager.EditLeaderBoard(leaderboardmodel);
-            return View();
+            LeaderBoardsView();
+            return Redirect("LeaderBoardsView");
         }
         [HttpGet]
         public ActionResult DeleteLeaderboardView(string leaderboardID)
         {
             leaderboardManager.DeleteLeaderBoard(leaderboardID);
-            //LeaderBoardsView();
-            return Redirect("TestView");
+            LeaderBoardsView();
+            return Redirect("LeaderBoardsView");
         }
     }
 }

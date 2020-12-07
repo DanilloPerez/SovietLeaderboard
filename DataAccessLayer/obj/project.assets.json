@@ -1921,6 +1921,19 @@
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
       },
+      "Interfaces/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "ModelsDTO": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Interfaces.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Interfaces.dll": {}
+        }
+      },
       "ModelsDTO/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -6635,6 +6648,11 @@
         "system.xml.xpath.xmldocument.nuspec"
       ]
     },
+    "Interfaces/1.0.0": {
+      "type": "project",
+      "path": "../Interfaces/Interfaces.csproj",
+      "msbuildProject": "../Interfaces/Interfaces.csproj"
+    },
     "ModelsDTO/1.0.0": {
       "type": "project",
       "path": "../Models/ModelsDTO.csproj",
@@ -6643,6 +6661,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "Interfaces >= 1.0.0",
       "ModelsDTO >= 1.0.0",
       "MySql.Data >= 8.0.21"
     ]
@@ -6673,6 +6692,9 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
+            "C:\\Users\\danil\\Source\\Repos\\SovietLeaderboard\\Interfaces\\Interfaces.csproj": {
+              "projectPath": "C:\\Users\\danil\\Source\\Repos\\SovietLeaderboard\\Interfaces\\Interfaces.csproj"
+            },
             "C:\\Users\\danil\\Source\\Repos\\SovietLeaderboard\\Models\\ModelsDTO.csproj": {
               "projectPath": "C:\\Users\\danil\\Source\\Repos\\SovietLeaderboard\\Models\\ModelsDTO.csproj"
             }

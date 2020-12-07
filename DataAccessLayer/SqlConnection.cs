@@ -5,7 +5,7 @@ using System.Text;
 
 namespace DataAccessLayer
 {
-    class SqlConnection
+    class SqlConnection : ISqlConnection
     {
 
 
@@ -55,7 +55,7 @@ namespace DataAccessLayer
             cnn.Open();
             try
             {
-                
+
                 MySqlDataReader reader = cmd.ExecuteReader();
                 while (reader.Read())
                 {
@@ -79,7 +79,7 @@ namespace DataAccessLayer
             MySqlCommand cmd = GenerateCommand(query, cnn);
             cnn.Open();
             try
-            {               
+            {
                 cmd.ExecuteNonQuery();
             }
             catch (Exception ex)
@@ -96,7 +96,7 @@ namespace DataAccessLayer
             cmd = AddParameters(cmd, parameters);
             cnn.Open();
             try
-            {               
+            {
                 cmd.ExecuteNonQuery();
             }
             catch
@@ -115,7 +115,7 @@ namespace DataAccessLayer
             cnn.Open();
             try
             {
-                
+
                 MySqlDataReader reader = cmd.ExecuteReader();
                 readerResults.Clear();
                 while (reader.Read())

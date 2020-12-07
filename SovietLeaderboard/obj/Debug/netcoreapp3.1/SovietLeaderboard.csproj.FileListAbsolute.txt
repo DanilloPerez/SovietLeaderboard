@@ -201,3 +201,4 @@ C:\Users\danil\Source\Repos\SovietLeaderboard\SovietLeaderboard\obj\Debug\netcor
 C:\Users\danil\Source\Repos\SovietLeaderboard\SovietLeaderboard\obj\Debug\netcoreapp3.1\Razor\Views\Team\DeleteTeamView.cshtml.g.cs
 C:\Users\danil\Source\Repos\SovietLeaderboard\SovietLeaderboard\obj\Debug\netcoreapp3.1\Razor\Views\Team\TeamsView.cshtml.g.cs
 C:\Users\danil\Source\Repos\SovietLeaderboard\SovietLeaderboard\obj\Debug\netcoreapp3.1\Razor\Views\Team\EditTeamView.cshtml.g.cs
+C:\Users\danil\Source\Repos\SovietLeaderboard\SovietLeaderboard\obj\Debug\netcoreapp3.1\Razor\Views\Friends\FriendsView.cshtml.g.cs

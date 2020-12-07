@@ -7,9 +7,9 @@ using System.Text;
 
 namespace LogicLayer
 {
-    public class TeamManager
+    public class TeamManager : ITeamManager
     {
-            private readonly TeamDB teamDB = new TeamDB();
+        private readonly ITeamDB teamDB = new TeamDB();
 
         public TeamModel CreateTeam(TeamModel createteamModel)
         {

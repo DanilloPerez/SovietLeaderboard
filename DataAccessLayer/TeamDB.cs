@@ -6,9 +6,9 @@ using System.Text;
 
 namespace DataAccessLayer
 {
-   public class TeamDB
+    public class TeamDB : ITeamDB
     {
-        private SqlConnection sqlConnection = new SqlConnection();
+        private ISqlConnection sqlConnection = new SqlConnection();
         public bool CreateTeam(TeamModel model)
         {
             List<string[]> param = new List<string[]>()
@@ -17,7 +17,7 @@ namespace DataAccessLayer
                 new string[] {"@OwnerID",model.OwnerID },
                 new string[] {"@TeamName",model.TeamName},
                 new string[] {"@Teamdesc",model.TeamDescription},
-               
+
             };
             sqlConnection.ExecuteNonSearchQueryParameters("INSERT INTO Teams(`TeamID`,`OwnerID`,`TeamName`,`TeamDescription`) VALUES( @TeamID , @OwnerID , @TeamName , @Teamdesc)", param);
             return true;

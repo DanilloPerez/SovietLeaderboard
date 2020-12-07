@@ -7,9 +7,9 @@ using static ModelsDTO.LeaderboardModel;
 
 namespace DataAccessLayer
 {
-    public class LeaderboardDB
+    public class LeaderboardDB : ILeaderboardDB
     {
-        private SqlConnection sqlConnection = new SqlConnection();
+        private ISqlConnection sqlConnection = new SqlConnection();
         public bool AddLeaderBoard(LeaderboardModel model)
         {
 
@@ -84,7 +84,7 @@ namespace DataAccessLayer
             {
                 new string[] { "@LeaderBoardID", leaderboardID },
              };
-            sqlConnection.ExecuteNonSearchQueryParameters("DELETE FROM LeaderBoards WHERE `LeaderBoardID` = @LeaderBoardID", param);       
+            sqlConnection.ExecuteNonSearchQueryParameters("DELETE FROM LeaderBoards WHERE `LeaderBoardID` = @LeaderBoardID", param);
         }
     }
 

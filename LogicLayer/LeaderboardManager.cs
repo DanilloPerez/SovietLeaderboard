@@ -4,9 +4,9 @@ using System.Collections.Generic;
 
 namespace LogicLayer
 {
-    public class LeaderboardManager
+    public class LeaderboardManager : ILeaderboardManager
     {
-        private readonly LeaderboardDB leaderBoardDB = new LeaderboardDB();
+        private readonly ILeaderboardDB leaderBoardDB = new LeaderboardDB();
 
 
         public LeaderboardModel AddLeaderBoard(LeaderboardModel leaderboardModel)
@@ -21,7 +21,7 @@ namespace LogicLayer
         }
         public List<LeaderBoardEntryModel> GetLeaderBoardEntries(string LeaderBoardID)
         {
-           return leaderBoardDB.GetLeaderBoardEntries(LeaderBoardID);          
+            return leaderBoardDB.GetLeaderBoardEntries(LeaderBoardID);
         }
 
         public List<LeaderboardModel> GetLeaderBoards()
