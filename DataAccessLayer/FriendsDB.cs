@@ -7,7 +7,8 @@ namespace DataAccessLayer
 {
     public class FriendsDB : IFriendsDB
     {
-        private ISqlConnection sqlConnection = new SqlConnection();
+        
+        private ISqlConnection sqlConnection = new ConnectionFactory().SqlConnection();
         public bool AddFriend(FriendsModel model)
         {
             List<string[]> param = new List<string[]>()

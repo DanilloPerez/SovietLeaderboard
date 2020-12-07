@@ -9,7 +9,7 @@ namespace DataAccessLayer
 {
     public class LeaderboardDB : ILeaderboardDB
     {
-        private ISqlConnection sqlConnection = new SqlConnection();
+        private ISqlConnection sqlConnection = new ConnectionFactory().SqlConnection();
         public bool AddLeaderBoard(LeaderboardModel model)
         {
 

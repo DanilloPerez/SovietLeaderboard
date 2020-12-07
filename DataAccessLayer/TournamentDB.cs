@@ -7,7 +7,7 @@ namespace DataAccessLayer
 {
     public class TournamentDB
     {
-        private ISqlConnection sqlConnection = new SqlConnection();
+        private ISqlConnection sqlConnection = new ConnectionFactory().SqlConnection();
         //public bool AddTournament(TournamentModel model)
         //{
 

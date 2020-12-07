@@ -8,7 +8,7 @@ namespace DataAccessLayer
 {
     public class TeamDB : ITeamDB
     {
-        private ISqlConnection sqlConnection = new SqlConnection();
+        private ISqlConnection sqlConnection = new ConnectionFactory().SqlConnection();
         public bool CreateTeam(TeamModel model)
         {
             List<string[]> param = new List<string[]>()
