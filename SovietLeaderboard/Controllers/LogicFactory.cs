@@ -1,4 +1,5 @@
 ﻿using Interfaces;
+using Interfaces.LogicInterfaces;
 using LogicLayer;
 using System;
 using System.Collections.Generic;
@@ -20,6 +21,10 @@ namespace SovietLeaderboard.Controllers
         public ITeamManager TeamManager()
         {
             return new TeamManager();
+        }
+        public IProfileManager ProfileManager()
+        {
+            return new ProfileManager();
         }
     }
 }

@@ -204,3 +204,5 @@ C:\Users\danil\Source\Repos\SovietLeaderboard\SovietLeaderboard\obj\Debug\netcor
 C:\Users\danil\Source\Repos\SovietLeaderboard\SovietLeaderboard\obj\Debug\netcoreapp3.1\Razor\Views\Friends\FriendsView.cshtml.g.cs
 C:\Users\danil\Source\Repos\SovietLeaderboard\SovietLeaderboard\bin\Debug\netcoreapp3.1\Interfaces.dll
 C:\Users\danil\Source\Repos\SovietLeaderboard\SovietLeaderboard\bin\Debug\netcoreapp3.1\Interfaces.pdb
+C:\Users\danil\Source\Repos\SovietLeaderboard\SovietLeaderboard\obj\Debug\netcoreapp3.1\Razor\Views\Profile\GetProfileView.cshtml.g.cs
+C:\Users\danil\Source\Repos\SovietLeaderboard\SovietLeaderboard\obj\Debug\netcoreapp3.1\Razor\Views\Profile\CreateProfileView.cshtml.g.cs

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using DataAccessLayer;
+using Interfaces.DALInterfaces;
 
 namespace LogicLayer
 {
@@ -18,6 +19,10 @@ namespace LogicLayer
         public ITeamDB teamDB()
         {
             return new TeamDB();
+        }
+        public IProfileDB profileDB()
+        {
+            return new ProfileDB();
         }
               
     }  

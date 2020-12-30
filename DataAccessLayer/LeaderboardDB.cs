@@ -48,7 +48,7 @@ namespace DataAccessLayer
                     new string[] {"@LeaderBoardID", LeaderboardID },
                 };
 
-            List<string[]> result = sqlConnection.ExecuteSearchQueryWithArrayReturn("SELECT * FROM LeaderBoard WHERE LeaderBoardID = @LeaderBoardID", param);
+            List<string[]> result = sqlConnection.ExecuteSearchQueryWithArrayReturn("SELECT * FROM LeaderBoard WHERE LeaderBoardID = @LeaderBoardID ORDER BY LeaderBoardScore DESC", param);
             foreach (string[] row in result)
             {
                 LeaderBoardEntryModel leaderboardentry = new LeaderBoardEntryModel();
@@ -72,6 +72,7 @@ namespace DataAccessLayer
                 leaderboards.leaderboardType = (LeaderboardType)Int32.Parse(row[2]);
                 leaderboards.LeaderBoardDescription = row[3].ToString();
                 leaderboards.LeaderBoardName = row[4].ToString();
+
 
                 Leaderboards.Add(leaderboards);
             }
