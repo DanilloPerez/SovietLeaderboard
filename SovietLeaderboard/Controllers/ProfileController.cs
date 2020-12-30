@@ -1,4 +1,6 @@
 ﻿using Interfaces.LogicInterfaces;
+using Microsoft.AspNet.Identity;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using ModelsDTO;
 using System;
@@ -12,9 +14,10 @@ namespace SovietLeaderboard.Controllers
     {
         private readonly IProfileManager profileManager = new LogicFactory().ProfileManager();
         [HttpGet]
-        public IActionResult GetProfileView()
+        public IActionResult GetProfileView(string UserID)
         {
-            ProfileModel profilemodel = profileManager.GetProfile();
+            string userID = User.Identity.GetUserId();
+            ProfileModel profilemodel = profileManager.GetProfile(userID);
             return View(profilemodel);
         }
 
@@ -27,6 +30,13 @@ namespace SovietLeaderboard.Controllers
         {
             profileManager.CreateProfile(model);
             //ProfileView("1");
+            return Redirect("CreateProfileView");
+        }     
+        [HttpGet]
+        public IActionResult DeleteProfile()
+        {
+            string userID = User.Identity.GetUserId();
+            profileManager.DeleteProfile(userID);
             return Redirect("CreateProfileView");
         }
 

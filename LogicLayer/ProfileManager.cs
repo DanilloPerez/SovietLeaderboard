@@ -16,9 +16,15 @@ namespace LogicLayer
             profileDB.CreateProfile(createprofileModel);
             return createprofileModel;
         }
-        public ProfileModel GetProfile()
+        public ProfileModel GetProfile(string userID)
         {
-            return profileDB.GetProfile();
+            
+            return profileDB.GetProfile(userID);
         }
+        public void DeleteProfile(string userID)
+        {
+            profileDB.DeleteProfile(userID);
+        }
+
     }
 }

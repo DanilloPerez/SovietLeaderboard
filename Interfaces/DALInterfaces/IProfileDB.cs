@@ -8,7 +8,8 @@ namespace Interfaces.DALInterfaces
    public interface IProfileDB
     {
         bool CreateProfile(ProfileModel model);
-        ProfileModel GetProfile();
+        ProfileModel GetProfile(string userID);
+        void DeleteProfile(string userID);
 
     }
 }

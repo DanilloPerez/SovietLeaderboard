@@ -23,22 +23,34 @@ namespace DataAccessLayer
             sqlConnection.ExecuteNonSearchQueryParameters("INSERT INTO Profile(`UserID`,`UserName`,`Age`,`Password`,`Darkmode`,`Avatar`) VALUES( @UserID , @UserName , @Age , @Password , @Darkmode, @Avatar)", param);
             return true;
         }
-        public ProfileModel GetProfile()
+        public ProfileModel GetProfile(string userID)
         {
-            ProfileModel Profile = new ProfileModel();
-            List<string[]> result = sqlConnection.ExecuteSearchQueryWithArrayReturn("SELECT * FROM Profile", new List<string[]>());
-            foreach (string[] row in result)
+            List<string[]> param = new List<string[]>()
             {
-                ProfileModel profile = new ProfileModel();
-                profile.UserID = row[0].ToString();
-                profile.UserName = row[1].ToString();
-                profile.Age = row[2].ToString();
-                profile.Password = row[3].ToString();
-                profile.Darkmode = Convert.ToBoolean(Convert.ToInt32((row[4])));
-                profile.Avatar = row[5].ToString();               
-            }
+                new string[] { "@UserID", userID },
+             };
+            
+            List<string> UserProfile = sqlConnection.ExecuteSearchQueryParameters("SELECT * FROM Profile WHERE `UserID` = @UserID", param);
 
-            return Profile;
+            ProfileModel profile = new ProfileModel();
+                profile.UserID = UserProfile[0].ToString();
+                profile.UserName = UserProfile[1].ToString();
+                profile.Age = UserProfile[5].ToString();
+                profile.Password = UserProfile[2].ToString();
+                profile.Darkmode = Convert.ToBoolean(Convert.ToInt32((UserProfile[4])));
+                profile.Avatar = UserProfile[3].ToString();               
+            
+            return profile;
         }
+        public void DeleteProfile(string userID)
+        {
+            List<string[]> param = new List<string[]>()
+            {
+                new string[] { "@UserID", userID },
+             };
+            sqlConnection.ExecuteNonSearchQueryParameters("DELETE FROM Profile WHERE `UserID` = @UserID", param);
+        }
+
+       
     }
 }
