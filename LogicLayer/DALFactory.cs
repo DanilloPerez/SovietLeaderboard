@@ -24,6 +24,10 @@ namespace LogicLayer
         {
             return new ProfileDB();
         }
+        public ITournamentDB tournamentDB()
+        {
+            return new TournamentDB();
+        }
               
     }  
 }

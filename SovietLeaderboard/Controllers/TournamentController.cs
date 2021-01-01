@@ -6,50 +6,35 @@ using Microsoft.AspNetCore.Mvc;
 using Models;
 using LogicLayer;
 using SovietLeaderboard.Models;
+using ModelsDTO;
 
 namespace SovietLeaderboard.Controllers
 {
     public class TournamentController : Controller
     {
-        public class LeaderBoardController : Controller
+        TournamentManager tournamentmanager = new TournamentManager();
+       
+
+
+        [HttpGet]
+        public IActionResult TournamentView()
+
         {
-            public IActionResult LeaderboardView()
+            List<TeamModel> teamlist = new List<TeamModel>();
+            for (int i = 0; i < 16; i++)
             {
-                return View();
+                TeamModel team = new TeamModel(i.ToString(), "goodest team"+i.ToString(), "ForfeitPLS"+i.ToString(), "1"+i.ToString(), new List<string>());
+                teamlist.Add(team);
             }
-            public IActionResult LaptimeView()
-            {
-                return View();
-            }
-            public IActionResult TallySheetView()
-            {
-                return View();
-            }
-            [HttpPost]
-            //public IActionResult CreateTournamentView(TournamentViewModel TournamentViewModel)
-            //{
-            //    TournamentModel tournamentModel = new TournamentModel();
-            //    tournamentModel.TournamentDescription = createTournamentViewModel.TournamentDescription;
-            //    tournamentModel.TournamentID = createTournamentViewModel.LeaderboardID;
-            //    tournamentModel.TournamentName = createTournamentViewModel.LeaderBoardName;
-            //    tournamentModel.TournamentType = createTournamentViewModel.leaderboardType;
-            //    tournamentModel.UserID = createTournamentViewModel.UserID;
-            //    TournamentManager tournamentManager = new TournamentManager();
-            //    tournamentManager.InsertTournament(tournamentModel);
-            //    return View();
-
-            //}
-            //[HttpGet]
-            //public IActionResult CreateLeaderBoardView()
-            //{
-            //    return View();
-            //}
-            public IActionResult TestView()
-            {
-
-                return View();
-            }
-
+            TournamentViewModel tournamentViewModel = new TournamentViewModel();
+            tournamentViewModel.teams = teamlist;
+            tournamentViewModel.rounds = tournamentmanager.CalculateRounds(teamlist.Count);
+            return View(tournamentViewModel);
+            
         }
+
     }
-}
+}      
+                        
+    
+

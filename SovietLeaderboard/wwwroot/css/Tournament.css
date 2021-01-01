@@ -1,0 +1,29 @@
+﻿body {
+
+}
+.row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    background: #ff0000; 
+    position: relative;
+    text-align: center;
+    height: 100vh;
+}
+.column {
+    background-color: #ff0000;
+    height: 100%;  
+    display: flex;
+    width: 15%;
+    overflow: visible;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}

@@ -1,0 +1,27 @@
+﻿@model TournamentViewModel
+
+<link href="~/css/Tournament.css" rel="stylesheet" />
+
+@{
+    <div class="row">
+        @for (int i = 1; i <= Model.rounds; i++)
+        {
+            <div class="column">
+             @for (int x = 0; x < Math.Pow(2,Model.rounds-i); x++)
+             {
+                 if (i == 1)
+                 {
+                 <button>@Model.teams[x].TeamName</button>
+                 }
+                 else
+                 {
+                     <button>TBD</button>
+                 }
+             }
+            </div>
+        }
+
+    </div>
+   
+    
+}
