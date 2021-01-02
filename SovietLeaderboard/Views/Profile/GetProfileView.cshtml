@@ -5,19 +5,15 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>GetProfileView</h1>
+<h1>Your Profile</h1>
 
-<h4>ProfileModel</h4>
+
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="GetProfileView">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="UserID" class="control-label"></label>
-                <input asp-for="UserID" class="form-control" />
-                <span asp-validation-for="UserID" class="text-danger"></span>
-            </div>
+           
             <div class="form-group">
                 <label asp-for="UserName" class="control-label"></label>
                 <input asp-for="UserName" class="form-control" />
@@ -25,7 +21,7 @@
             </div>
             <div class="form-group form-check">
                 <label class="form-check-label">
-                    <input class="form-check-input" asp-for="Darkmode" /> @Html.DisplayNameFor(model => model.Darkmode)
+                    <input onclick="toggleDarkmode()" class="form-check-input" asp-for="Darkmode" /> @Html.DisplayNameFor(model => model.Darkmode)
                 </label>
             </div>
             <div class="form-group">
@@ -33,11 +29,7 @@
                 <input asp-for="Age" class="form-control" />
                 <span asp-validation-for="Age" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Password" class="control-label"></label>
-                <input asp-for="Password" class="form-control" />
-                <span asp-validation-for="Password" class="text-danger"></span>
-            </div>
+            
             <div class="form-group">
                 <label asp-for="Avatar" class="control-label"></label>
                 <input asp-for="Avatar" class="form-control" />

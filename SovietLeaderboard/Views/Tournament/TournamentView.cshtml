@@ -1,27 +1,29 @@
 ﻿@model TournamentViewModel
-
+    <script src="~/js/Tournament.js"></script>
 <link href="~/css/Tournament.css" rel="stylesheet" />
 
 @{
-    <div class="row">
+    @*teams*@<div class="row">
         @for (int i = 1; i <= Model.rounds; i++)
         {
-            <div class="column">
-             @for (int x = 0; x < Math.Pow(2,Model.rounds-i); x++)
-             {
-                 if (i == 1)
-                 {
-                 <button>@Model.teams[x].TeamName</button>
-                 }
-                 else
-                 {
-                     <button>TBD</button>
-                 }
-             }
+            <h1>Round @i</h1>
+            @*rounds*@<div class="column" >
+                @for (int x = 0; x < Math.Pow(2, Model.rounds - i); x++)
+                {
+                    string id = i.ToString() + x.ToString();
+                    if (i == 1)
+                    {
+                        <button onclick="pickWinner(this)" id="@id"> @Model.teams[x].TeamName</button>
+                    }
+                    else
+                    {
+                        <button id="@id" onclick="pickWinner(this)">TBD</button>
+                    }
+                }
             </div>
         }
 
     </div>
-   
-    
+
+
 }

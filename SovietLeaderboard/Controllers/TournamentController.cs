@@ -21,7 +21,7 @@ namespace SovietLeaderboard.Controllers
 
         {
             List<TeamModel> teamlist = new List<TeamModel>();
-            for (int i = 0; i < 16; i++)
+            for (int i = 0; i < 8; i++)
             {
                 TeamModel team = new TeamModel(i.ToString(), "goodest team"+i.ToString(), "ForfeitPLS"+i.ToString(), "1"+i.ToString(), new List<string>());
                 teamlist.Add(team);

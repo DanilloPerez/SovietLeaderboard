@@ -1,4 +1,6 @@
 ﻿
-body {
-    background: #ff0000;
+
+.Dark-Mode{
+    background-color: black !important;
+   background: black !important; 
 }

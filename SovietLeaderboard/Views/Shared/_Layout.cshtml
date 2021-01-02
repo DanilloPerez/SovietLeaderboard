@@ -11,14 +11,15 @@
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="~/css/index.css" rel="stylesheet" />
-    link
+    <link href="~/css/index.css" rel="stylesheet"/>
+ 
     <!-- Custom styles for this template -->
     <link href="css/simple-sidebar.css" rel="stylesheet">
     <!-- DarkMode-->
     <link rel="stylesheet" href="~/css/DarkMode.css" />
+    <script src="~/js/Dorkmode.js"></script>
 </head>
-<body>
+<body onload="checkDarkmode()">
 
 
     <div class="d-flex" id="wrapper">
@@ -28,13 +29,13 @@
 
             <div class="sidebar-heading">Menu</div>
 
-            <div class="list-group list-group-flush">
-                <a href="#" class="list-group-item list-group-item-action Background">Home</a>
+            <div id="dingflofbips" class="list-group list-group-flush">
+                <a href="/Home/Index" class="list-group-item list-group-item-action Background">Home</a>
                 <a href="/Team/TeamsView" class="list-group-item list-group-item-action Background">Teams</a>
-                <a href="#" class="list-group-item list-group-item-action Background">Tournaments</a>
+                <a href=" /Tournament/TournamentView" class="list-group-item list-group-item-action Background">Tournaments</a>
                 <a href="/Profile/GetProfileView" class="list-group-item list-group-item-action Background">Profile</a>
                 <a href="/LeaderBoard/LeaderBoardsView" class="list-group-item list-group-item-action Background">Leaderboards</a>
-                <a href="#" class="list-group-item list-group-item-action Background">Friends</a>
+              
 
             </div>
         </div>
@@ -57,7 +58,7 @@
                                     Settings
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" asp-action="DarkMode">DarkMode</a>
+                                    <a class="dropdown-item"  onclick="toggleDarkmode()">Dark-Mode</a>
                                     
                                     @if (signInManager.IsSignedIn(User))
                                     {
