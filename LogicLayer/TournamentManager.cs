@@ -1,5 +1,6 @@
 ﻿using DataAccessLayer;
 using Models;
+using ModelsDTO;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -41,6 +42,11 @@ namespace LogicLayer
             }          
                 throw new Exception("Teamcount must be even");
             
-        }       
+        }      
+        public List<PositionModel> GetTeamPosition(string TournamentID)
+        {
+            return tournamentDB.GetTeamPosition(TournamentID);
+            
+        }
     }
 }

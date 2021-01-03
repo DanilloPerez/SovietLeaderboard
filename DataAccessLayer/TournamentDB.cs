@@ -1,4 +1,5 @@
 ﻿using Models;
+using ModelsDTO;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -53,10 +54,38 @@ namespace DataAccessLayer
 
 
             };
-            sqlConnection.ExecuteNonSearchQueryParameters("INSERT INTO Tournament(`TeamID`,) VALUES( @TeamID )", param);
+            sqlConnection.ExecuteNonSearchQueryParameters("INSERT INTO Tournament(`TeamID`) VALUES( @TeamID )", param);
             return true;
         }
+        public List<PositionModel> GetTeamPosition(string TournamentID)
+        {
+            List<string[]> param = new List<string[]>()
+            {
+                 new string[] {"@TournamentID",TournamentID}
+
+            };
+            List<PositionModel> POSmodel = new List<PositionModel>();
+            List<string[]> result = sqlConnection.ExecuteSearchQueryWithArrayReturn("SELECT * FROM TournamentPosition INNER JOIN Teams ON TournamentPosition.TeamID = Teams.TeamID WHERE TournamentID = @TournamentID", param);
+            foreach (string[] row in result)
+            {
+                PositionModel posmodel = new PositionModel();
+                posmodel.TournamentID = row[0].ToString();
+                posmodel.PositionID = row[1].ToString();
+                TeamModel teammodel = new TeamModel();
+                teammodel.TeamID = row[2].ToString();
+                teammodel.TeamName = row[3].ToString();
+                posmodel.team = teammodel;
+
+
+                POSmodel.Add(posmodel);
+            }
+
+            return POSmodel;
+        }
+
+
     }
+    
 
 
 }

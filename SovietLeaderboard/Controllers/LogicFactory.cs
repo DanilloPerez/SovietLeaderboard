@@ -10,10 +10,7 @@ namespace SovietLeaderboard.Controllers
 {
     public class LogicFactory
     {
-        public IFriendsManager FriendsManager()
-        {
-            return new FriendsManager();
-        }
+        
         public ILeaderboardManager LeaderboardManager()
         {
             return new LeaderboardManager();

@@ -20,6 +20,8 @@ namespace SovietLeaderboard.Controllers
         public IActionResult TournamentView()
 
         {
+
+            TournamentManager tournamentmanager = new TournamentManager();
             List<TeamModel> teamlist = new List<TeamModel>();
             for (int i = 0; i < 8; i++)
             {
@@ -27,11 +29,14 @@ namespace SovietLeaderboard.Controllers
                 teamlist.Add(team);
             }
             TournamentViewModel tournamentViewModel = new TournamentViewModel();
+            
             tournamentViewModel.teams = teamlist;
             tournamentViewModel.rounds = tournamentmanager.CalculateRounds(teamlist.Count);
-            return View(tournamentViewModel);
-            
+            tournamentViewModel.POSmodels = tournamentmanager.GetTeamPosition("1");
+            return View(tournamentViewModel);            
         }
+        
+       
 
     }
 }      

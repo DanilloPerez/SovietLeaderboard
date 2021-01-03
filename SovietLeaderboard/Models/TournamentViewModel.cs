@@ -9,7 +9,7 @@ namespace SovietLeaderboard.Models
 {
     public class TournamentViewModel
     {
-
+        public List<PositionModel> POSmodels = new List<PositionModel>();
         public List<TeamModel> teams = new List<TeamModel>();
         public int rounds { get; set; }
        

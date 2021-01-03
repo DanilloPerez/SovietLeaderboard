@@ -8,10 +8,7 @@ namespace LogicLayer
 {
     public class DALFactory
     {
-        public IFriendsDB FriendsDB()
-        {
-            return new FriendsDB();
-        }
+       
         public ILeaderboardDB leaderboardDB()
         {
             return new LeaderboardDB();
