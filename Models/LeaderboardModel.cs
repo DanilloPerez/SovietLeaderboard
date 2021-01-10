@@ -8,11 +8,7 @@ namespace ModelsDTO
     public class LeaderboardModel
 
     {
-        public enum LeaderboardType
-        {
-            Laptimes = 1,
-            Ladder = 2
-        }
+       
         
         public string LeaderboardID { get; set; }
        
@@ -22,7 +18,7 @@ namespace ModelsDTO
         
         public string UserID { get; set; }
         
-        public LeaderboardType leaderboardType { get; set; }
+      
     }
 }
 

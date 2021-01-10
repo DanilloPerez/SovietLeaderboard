@@ -13,7 +13,7 @@ namespace LogicLayer
         {
             return new LeaderboardDB();
         }
-        public ITeamDB teamDB()
+        public ITeamManagerDB teamDB()
         {
             return new TeamDB();
         }

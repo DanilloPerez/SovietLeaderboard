@@ -25,10 +25,8 @@
             <th>
                 @Html.DisplayNameFor(model => model.UserID)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.leaderboardType)
-            </th>
-            <th></th>
+           
+          <th></th>  
         </tr>
     </thead>
     <tbody>
@@ -46,9 +44,7 @@
             <td>
                 @Html.DisplayFor(modelItem => item.UserID)
             </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.leaderboardType)
-            </td>
+         
             <td>
                 @Html.ActionLink("View", "LeaderBoardView", new { LeaderBoardID = item.LeaderboardID }) |
                 @Html.ActionLink("Edit", "EditLeaderBoardView", new { LeaderBoardID = item.LeaderboardID }) |

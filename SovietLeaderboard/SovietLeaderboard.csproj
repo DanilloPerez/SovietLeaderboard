@@ -2,7 +2,12 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>242a074a-8012-4fc0-9d04-fd689c8e1c78</UserSecretsId>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="Properties\PublishProfiles\SovietLeaderboard - Web Deploy.pubxml.user" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.1.8" />

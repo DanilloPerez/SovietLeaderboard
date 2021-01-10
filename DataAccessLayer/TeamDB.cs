@@ -1,4 +1,5 @@
-﻿using Models;
+﻿using Interfaces.DALInterfaces;
+using Models;
 using ModelsDTO;
 using System;
 using System.Collections.Generic;
@@ -6,7 +7,7 @@ using System.Text;
 
 namespace DataAccessLayer
 {
-    public class TeamDB : ITeamDB
+    public class TeamDB : ITeamManagerDB,ITeamDB
     {
         private ISqlConnection sqlConnection = new ConnectionFactory().SqlConnection();
         public bool CreateTeam(TeamModel model)
@@ -58,6 +59,42 @@ namespace DataAccessLayer
                 new string[] { "@TeamID", teamID },
              };
             sqlConnection.ExecuteNonSearchQueryParameters("DELETE FROM Teams WHERE `TeamID` = @TeamID", param);
+        }
+
+        public bool AddPlayerToTeam(string UserID, string TeamID)
+        {
+            List<string[]> param = new List<string[]>()
+            {
+                new string[] {"@UserID", UserID},
+                new string[] {"@TeamID", TeamID},
+            };
+            var result = sqlConnection.ExecuteNonSearchQueryParameters("INSERT INTO UserTeamKoppeltabel (UserID,TeamID) VALUES (@UserID, @TeamID)", param);
+            return result;
+        }
+
+        public TeamModel FindTeamByID(string TeamID)
+        {
+            List<string[]> param = new List<string[]>()
+            {
+                new string[] {"@TeamID", TeamID},
+            };
+            var result = sqlConnection.ExecuteSearchQueryWithArrayReturn("SELECT * FROM Teams WHERE TeamID = @TeamID", param);
+            if (result.Count != 0)
+            {
+                return GenerateDTOFromRow(result[0]);
+            }
+            return null;
+        }
+        private TeamModel GenerateDTOFromRow(string[] row)
+        {
+            TeamModel teamModel = new TeamModel()
+            {
+                TeamID = row[0],
+                OwnerID = row[1],
+                TeamName = row[2],
+                TeamDescription = row[3],
+            };
+            return teamModel;
         }
     }
 }

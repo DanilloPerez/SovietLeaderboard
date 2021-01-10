@@ -18,8 +18,8 @@ namespace SovietLeaderboard.Models
         public string LeaderBoardDescription { get; set; } 
         [Required]
         public string UserID { get; set; }
-        [Required]
-        public LeaderboardType leaderboardType { get; set; }
+       
+     
         [Required]
         public string LeaderBoardScore { get; set; }
     }

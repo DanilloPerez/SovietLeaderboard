@@ -1,7 +1,8 @@
 ﻿using ModelsDTO;
 using System.Collections.Generic;
 
-namespace LogicLayer
+
+namespace Interfaces
 {
     public interface ITeamManager
     {
@@ -9,5 +10,8 @@ namespace LogicLayer
         void DeleteTeams(string teamID);
         TeamModel EditTeam(TeamModel teamModel);
         List<TeamModel> GetTeams();
+
+        ITeam GetTeamByID(string TeamID);
+       
     }
 }

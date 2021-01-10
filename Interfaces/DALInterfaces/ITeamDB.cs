@@ -1,13 +1,11 @@
-﻿using ModelsDTO;
+﻿using System;
 using System.Collections.Generic;
+using System.Text;
 
-namespace DataAccessLayer
+namespace Interfaces.DALInterfaces
 {
     public interface ITeamDB
     {
-        bool CreateTeam(TeamModel model);
-        void DeleteTeams(string teamID);
-        bool EditTeam(TeamModel model);
-        List<TeamModel> GetTeams();
+        bool AddPlayerToTeam(string UserID, string TeamID);
     }
 }

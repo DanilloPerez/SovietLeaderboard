@@ -1,7 +1,7 @@
 ﻿using ModelsDTO;
 using System.Collections.Generic;
 
-namespace LogicLayer
+namespace Interfaces
 {
     public interface ILeaderboardManager
     {

@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Interfaces;
 using LogicLayer;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Models;
 using ModelsDTO;
@@ -13,11 +15,18 @@ namespace SovietLeaderboard.Controllers
     public class TeamController : Controller
     {
         private readonly ITeamManager teamManager = new LogicFactory().TeamManager();
+        private readonly UserManager<SLBUser> userManager;
+
+        public TeamController(UserManager<SLBUser> userManager)
+        {
+            this.userManager = userManager;
+        }
         [HttpGet]
         public IActionResult TeamView(string TeamID)
         {
-            List<TeamModel> teammodel = teamManager.GetTeams();
-            return View(teammodel);
+            TeamID = "3";
+            var model = teamManager.GetTeamByID(TeamID);
+            return View(model);
         }
         [HttpGet]
         public IActionResult TeamsView()
@@ -31,8 +40,11 @@ namespace SovietLeaderboard.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult CreateTeamView(TeamModel model)
+        public async Task<IActionResult> CreateTeamView(TeamModel model)
         {
+
+            var currentUser = await userManager.GetUserAsync(User);
+            model.OwnerID = currentUser.Id;
             teamManager.CreateTeam(model);
             TeamsView();
             return Redirect("TeamsView");

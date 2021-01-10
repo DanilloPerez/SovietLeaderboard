@@ -17,7 +17,7 @@ namespace DataAccessLayer
             {
                 new string[] {"@LeaderBoardID",model.LeaderboardID },
                 new string[] {"@OwnerID",model.UserID},
-                new string[] {"@leaderboardType", ((int)model.leaderboardType).ToString() },
+               
                 new string[] {"@LeaderBoardName",model.LeaderBoardName},
                 new string[] {"@LeaderBoardDescription",model.LeaderBoardDescription }
             };
@@ -31,7 +31,7 @@ namespace DataAccessLayer
             {
                 new string[] { "@LeaderBoardID", model.LeaderboardID },
                 new string[] { "@OwnerID", model.UserID },
-                new string[] { "@leaderboardType", ((int)model.leaderboardType).ToString() },
+               
                 new string[] { "@LeaderBoardName", model.LeaderBoardName },
                 new string[] { "@LeaderBoardDescription", model.LeaderBoardDescription }
              };
@@ -69,7 +69,7 @@ namespace DataAccessLayer
                 LeaderboardModel leaderboards = new LeaderboardModel();
                 leaderboards.LeaderboardID = row[0].ToString();
                 leaderboards.UserID = row[1].ToString();
-                leaderboards.leaderboardType = (LeaderboardType)Int32.Parse(row[2]);
+                
                 leaderboards.LeaderBoardDescription = row[3].ToString();
                 leaderboards.LeaderBoardName = row[4].ToString();
 
