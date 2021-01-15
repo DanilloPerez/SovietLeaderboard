@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Interfaces;
 using LogicLayer;
+using LogicLayer.Team;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Models;
@@ -23,8 +24,7 @@ namespace SovietLeaderboard.Controllers
         }
         [HttpGet]
         public IActionResult TeamView(string TeamID)
-        {
-            TeamID = "3";
+        {          
             var model = teamManager.GetTeamByID(TeamID);
             return View(model);
         }
@@ -57,16 +57,17 @@ namespace SovietLeaderboard.Controllers
             return Redirect("TeamsView");
         }
         [HttpPost]
-        public IActionResult EditTeamView(TeamModel model)
+        public IActionResult EditTeamView(Team model)
         {
-            teamManager.EditTeam(model);
+            model.Update();
             TeamsView();
             return Redirect("TeamsView");
         }
         [HttpGet]
-        public IActionResult EditTeamView()
-        {
-            return View();
+        public IActionResult EditTeamView(string TeamID)
+        {           
+            ITeam team = teamManager.GetTeamByID(TeamID);
+            return View(team);
         }
 
     }

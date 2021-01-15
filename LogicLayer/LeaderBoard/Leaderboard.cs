@@ -8,7 +8,7 @@ namespace LogicLayer.LeaderBoard
 {
     public class Leaderboard : ILeaderboard
     {
-        ILeaderboardDB leaderboardDB = new LeaderboardDB();
+        ILeaderboardManagerDB leaderboardDB = new LeaderboardDB();
 
         public string LeaderboardID { get; set; }
 

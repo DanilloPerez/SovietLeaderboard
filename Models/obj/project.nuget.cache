@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CghP+YzMGdsYhMZ4MmB8VvXyBQ8ux6GmxSPvwihGIpLgg41/GKZwnn3g9tMditPrbEAYJv+UTWlW8bJg6BqBoA==",
+  "dgSpecHash": "loxK5z4JKmD7aI8RcqZ+Y3hXaPSiXFnvlZ5TMa3I90L2LSrDrVdKqlpl/GlfDLZf7sCEMCKsEE/gsYRk0Tlr9Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\danil\\Source\\Repos\\SovietLeaderboard\\Models\\ModelsDTO.csproj",
+  "projectFilePath": "C:\\Users\\danil\\source\\repos\\SovietLeaderboard\\Models\\ModelsDTO.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\danil\\.nuget\\packages\\entityframework\\6.1.0\\entityframework.6.1.0.nupkg.sha512",
     "C:\\Users\\danil\\.nuget\\packages\\microsoft.aspnet.identity.core\\2.2.3\\microsoft.aspnet.identity.core.2.2.3.nupkg.sha512",

@@ -1,13 +1,16 @@
 ﻿using DataAccessLayer;
+using Factories;
 using Interfaces;
 using ModelsDTO;
 using System.Collections.Generic;
 
 namespace LogicLayer
 {
+
     public class LeaderboardManager : ILeaderboardManager
     {
-        private readonly ILeaderboardDB leaderBoardDB = new DALFactory().leaderboardDB();
+        
+        private readonly ILeaderboardManagerDB leaderBoardDB = new DALFactory().leaderboardDB();
 
 
         public LeaderboardModel AddLeaderBoard(LeaderboardModel leaderboardModel)

@@ -6,7 +6,7 @@ using System.Text;
 
 namespace DataAccessLayer
 {
-    public class ProfileDB : IProfileDB
+    public class ProfileDB : IProfileManagerDB
     {
         private ISqlConnection sqlConnection = new ConnectionFactory().SqlConnection();
         public bool CreateProfile(ProfileModel model)

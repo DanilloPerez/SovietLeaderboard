@@ -1,4 +1,5 @@
 ﻿using DataAccessLayer;
+using Factories;
 using Interfaces;
 using Models;
 using ModelsDTO;
@@ -12,7 +13,7 @@ namespace LogicLayer
 {
     public class TournamentManager : ITournamentManager
     {
-        private readonly ITournamentDB tournamentDB = new DALFactory().tournamentDB();
+        private readonly ITournamentManagerDB tournamentDB = new DALFactory().tournamentDB();
 
         public TournamentModel CreateTournament(TournamentModel createtournamentModel)
         {
@@ -23,13 +24,19 @@ namespace LogicLayer
         {
             return tournamentDB.GetTournaments();
         }
+
+        public Tournament GetTournamentByID(string ID)
+        {
+            TournamentModel model = tournamentDB.GetTournamentByID(ID);
+            return new Tournament(model);
+        }
       
        
         public List<PositionModel> GetTeamPosition(string TournamentID)
         {
             return tournamentDB.GetTeamPosition(TournamentID);
-            
         }
+
         public int CalculateRounds(int TeamCount)
         {
             Tournament tournament = new Tournament();          

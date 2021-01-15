@@ -11,7 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LogicLayer", "LogicLayer\Lo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModelsDTO", "Models\ModelsDTO.csproj", "{F8AD29AE-A598-41EE-81BA-1F9E6FC81205}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces", "Interfaces\Interfaces.csproj", "{BB762FB1-24BF-476D-A54F-72A849DE272A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interfaces", "Interfaces\Interfaces.csproj", "{BB762FB1-24BF-476D-A54F-72A849DE272A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factories", "Factories\Factories.csproj", "{F1DBF101-039A-4F99-8CE7-3FD24F499E25}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogicLayerTests", "LogicLayerTests\LogicLayerTests.csproj", "{34A25A5E-A5A2-4704-9878-2E1B1552669C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,14 @@ Global
 		{BB762FB1-24BF-476D-A54F-72A849DE272A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB762FB1-24BF-476D-A54F-72A849DE272A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BB762FB1-24BF-476D-A54F-72A849DE272A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1DBF101-039A-4F99-8CE7-3FD24F499E25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1DBF101-039A-4F99-8CE7-3FD24F499E25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1DBF101-039A-4F99-8CE7-3FD24F499E25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1DBF101-039A-4F99-8CE7-3FD24F499E25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34A25A5E-A5A2-4704-9878-2E1B1552669C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34A25A5E-A5A2-4704-9878-2E1B1552669C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34A25A5E-A5A2-4704-9878-2E1B1552669C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34A25A5E-A5A2-4704-9878-2E1B1552669C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

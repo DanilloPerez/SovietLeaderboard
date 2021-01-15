@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace DataAccessLayer
 {
-    public interface ILeaderboardDB
+    public interface ILeaderboardManagerDB
     {
         bool AddLeaderBoard(LeaderboardModel model);
         

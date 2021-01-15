@@ -7,7 +7,7 @@ using static ModelsDTO.LeaderboardModel;
 
 namespace DataAccessLayer
 {
-    public class LeaderboardDB : ILeaderboardDB
+    public class LeaderboardDB : ILeaderboardManagerDB
     {
         private ISqlConnection sqlConnection = new ConnectionFactory().SqlConnection();
         public bool AddLeaderBoard(LeaderboardModel model)

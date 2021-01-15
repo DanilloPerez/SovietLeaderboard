@@ -14,16 +14,10 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.TeamID)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.TeamDescription)
-            </th>
-            <th>
                 @Html.DisplayNameFor(model => model.TeamName)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.OwnerID)
+                @Html.DisplayNameFor(model => model.TeamDescription)
             </th>
             <th></th>
         </tr>
@@ -32,16 +26,10 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.TeamID)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TeamDescription)
-            </td>
-            <td>
                 @Html.DisplayFor(modelItem => item.TeamName)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.OwnerID)
+                @Html.DisplayFor(modelItem => item.TeamDescription)
             </td>
             <td>
                 @Html.ActionLink("Edit", "EditTeamView", new { TeamID = item.TeamID }) |

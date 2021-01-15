@@ -21,7 +21,6 @@ namespace SovietLeaderboard.Controllers
 
         {
 
-            TournamentManager tournamentmanager = new TournamentManager();
             List<TeamModel> teamlist = new List<TeamModel>();
             for (int i = 0; i < 8; i++)
             {
@@ -30,13 +29,13 @@ namespace SovietLeaderboard.Controllers
             }
             TournamentViewModel tournamentViewModel = new TournamentViewModel();
             
+
+
             tournamentViewModel.teams = teamlist;
             tournamentViewModel.rounds = tournamentmanager.CalculateRounds(teamlist.Count);
             tournamentViewModel.POSmodels = tournamentmanager.GetTeamPosition("1");
             return View(tournamentViewModel);            
         }
-        
-       
 
     }
 }      

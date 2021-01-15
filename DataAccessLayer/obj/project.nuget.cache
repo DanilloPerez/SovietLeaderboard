@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MPqMIihg0xhlX2WuBnalX0/AIC/oCnATWCoEjXI24uP7EQ8kzMnRRx9yeZw/GeXWmGsk0aysRfVZTjP4KZaOZg==",
+  "dgSpecHash": "086RJ75oQVZLrURgaV8/VhrPMO78rOjWI6UpuchikIzA1K75c81sOykEov9ByXpg04RFSjxAYzJy/vXZyj9+Aw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\danil\\Source\\Repos\\SovietLeaderboard\\DataAccessLayer\\DataAccessLayer.csproj",
+  "projectFilePath": "C:\\Users\\danil\\source\\repos\\SovietLeaderboard\\DataAccessLayer\\DataAccessLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\danil\\.nuget\\packages\\bouncycastle.netcore\\1.8.3\\bouncycastle.netcore.1.8.3.nupkg.sha512",
     "C:\\Users\\danil\\.nuget\\packages\\entityframework\\6.1.0\\entityframework.6.1.0.nupkg.sha512",

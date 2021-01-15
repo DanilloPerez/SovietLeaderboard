@@ -3073,6 +3073,20 @@
           "bin/placeholder/DataAccessLayer.dll": {}
         }
       },
+      "Factories/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "DataAccessLayer": "1.0.0",
+          "Interfaces": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Factories.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Factories.dll": {}
+        }
+      },
       "Interfaces/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -3090,7 +3104,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
-          "DataAccessLayer": "1.0.0"
+          "Factories": "1.0.0"
         },
         "compile": {
           "bin/placeholder/LogicLayer.dll": {}
@@ -9852,6 +9866,11 @@
       "path": "../DataAccessLayer/DataAccessLayer.csproj",
       "msbuildProject": "../DataAccessLayer/DataAccessLayer.csproj"
     },
+    "Factories/1.0.0": {
+      "type": "project",
+      "path": "../Factories/Factories.csproj",
+      "msbuildProject": "../Factories/Factories.csproj"
+    },
     "Interfaces/1.0.0": {
       "type": "project",
       "path": "../Interfaces/Interfaces.csproj",
@@ -9888,11 +9907,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\danil\\Source\\Repos\\SovietLeaderboard\\SovietLeaderboard\\SovietLeaderboard.csproj",
+      "projectUniqueName": "C:\\Users\\danil\\source\\repos\\SovietLeaderboard\\SovietLeaderboard\\SovietLeaderboard.csproj",
       "projectName": "SovietLeaderboard",
-      "projectPath": "C:\\Users\\danil\\Source\\Repos\\SovietLeaderboard\\SovietLeaderboard\\SovietLeaderboard.csproj",
+      "projectPath": "C:\\Users\\danil\\source\\repos\\SovietLeaderboard\\SovietLeaderboard\\SovietLeaderboard.csproj",
       "packagesPath": "C:\\Users\\danil\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\danil\\Source\\Repos\\SovietLeaderboard\\SovietLeaderboard\\obj\\",
+      "outputPath": "C:\\Users\\danil\\source\\repos\\SovietLeaderboard\\SovietLeaderboard\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\danil\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -9908,11 +9927,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\danil\\Source\\Repos\\SovietLeaderboard\\LogicLayer\\LogicLayer.csproj": {
-              "projectPath": "C:\\Users\\danil\\Source\\Repos\\SovietLeaderboard\\LogicLayer\\LogicLayer.csproj"
+            "C:\\Users\\danil\\source\\repos\\SovietLeaderboard\\LogicLayer\\LogicLayer.csproj": {
+              "projectPath": "C:\\Users\\danil\\source\\repos\\SovietLeaderboard\\LogicLayer\\LogicLayer.csproj"
             },
-            "C:\\Users\\danil\\Source\\Repos\\SovietLeaderboard\\Models\\ModelsDTO.csproj": {
-              "projectPath": "C:\\Users\\danil\\Source\\Repos\\SovietLeaderboard\\Models\\ModelsDTO.csproj"
+            "C:\\Users\\danil\\source\\repos\\SovietLeaderboard\\Models\\ModelsDTO.csproj": {
+              "projectPath": "C:\\Users\\danil\\source\\repos\\SovietLeaderboard\\Models\\ModelsDTO.csproj"
             }
           }
         }

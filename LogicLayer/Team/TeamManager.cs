@@ -1,4 +1,5 @@
 ﻿using DataAccessLayer;
+using Factories;
 using Interfaces;
 using Models;
 using ModelsDTO;
@@ -19,11 +20,6 @@ namespace LogicLayer.Team
             teamManagerDB.CreateTeam(createteamModel);
             Team team = new Team(createteamModel);           
             return createteamModel;
-        }
-        public TeamModel EditTeam(TeamModel teamModel)
-        {
-            teamManagerDB.EditTeam(teamModel);
-            return teamModel;
         }
         public List<TeamModel> GetTeams()
         {

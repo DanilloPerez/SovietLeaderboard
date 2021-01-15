@@ -1,4 +1,5 @@
-﻿using Interfaces.DALInterfaces;
+﻿using Factories;
+using Interfaces.DALInterfaces;
 using Interfaces.LogicInterfaces;
 using ModelsDTO;
 using System;
@@ -9,7 +10,7 @@ namespace LogicLayer
 {
     public class ProfileManager : IProfileManager
     {
-        private readonly IProfileDB profileDB = new DALFactory().profileDB();
+        private readonly IProfileManagerDB profileDB = new DALFactory().profileDB();
 
         public ProfileModel CreateProfile(ProfileModel createprofileModel)
         {

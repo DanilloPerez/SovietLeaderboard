@@ -32,5 +32,20 @@ namespace LogicLayer.Team
         {
             return teamDB.AddPlayerToTeam(UserID, this.TeamID);
         }
+        public bool Update()
+        {
+            return teamDB.EditTeam(CreateModel());
+        }
+        private TeamModel CreateModel()
+        {
+            TeamModel model = new TeamModel()
+            {
+                TeamID = this.TeamID,
+                TeamDescription = this.TeamDescription,
+                TeamName = this.TeamName,
+                OwnerID = this.OwnerID,
+            };
+            return model;
+        }
     }
 }

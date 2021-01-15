@@ -1,4 +1,4 @@
-﻿@model ModelsDTO.TeamModel
+﻿@model Interfaces.ITeam
 
 @{
     ViewData["Title"] = "EditTeamView";
@@ -14,9 +14,7 @@
         <form asp-action="EditTeamView">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="TeamID" class="control-label"></label>
-                <input asp-for="TeamID" class="form-control" />
-                <span asp-validation-for="TeamID" class="text-danger"></span>
+                <input asp-for="TeamID" type="hidden" class="form-control" />
             </div>
             <div class="form-group">
                 <label asp-for="TeamDescription" class="control-label"></label>
@@ -29,9 +27,7 @@
                 <span asp-validation-for="TeamName" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="OwnerID" class="control-label"></label>
-                <input asp-for="OwnerID" class="form-control" />
-                <span asp-validation-for="OwnerID" class="text-danger"></span>
+                <input asp-for="OwnerID" type="hidden" class="form-control" />
             </div>
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />

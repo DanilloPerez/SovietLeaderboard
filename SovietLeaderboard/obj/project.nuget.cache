@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QrUqZDOgkcRtNlby4ebJheAczT7gnWZCw0+8he9GMBpFEyBoRt2lcG2tIUVjNPltl4vADiIr02YH6Ep0MEmzvw==",
+  "dgSpecHash": "rnEvw5CCA6iOfDLwpuiKT5MxaKX2x5Ev4muYs1aoNVKT6xh/3Pgr/ljkzuUnTv3t1kcsWsjqDxAsQ9N2pxPCCA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\danil\\Source\\Repos\\SovietLeaderboard\\SovietLeaderboard\\SovietLeaderboard.csproj",
+  "projectFilePath": "C:\\Users\\danil\\source\\repos\\SovietLeaderboard\\SovietLeaderboard\\SovietLeaderboard.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\danil\\.nuget\\packages\\bouncycastle.netcore\\1.8.3\\bouncycastle.netcore.1.8.3.nupkg.sha512",
     "C:\\Users\\danil\\.nuget\\packages\\entityframework\\6.1.0\\entityframework.6.1.0.nupkg.sha512",

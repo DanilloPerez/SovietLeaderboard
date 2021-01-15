@@ -1,4 +1,5 @@
-﻿using Models;
+﻿using Interfaces.LogicInterfaces;
+using Models;
 using ModelsDTO;
 using System;
 using System.Collections.Generic;
@@ -6,13 +7,12 @@ using System.Text;
 
 namespace LogicLayer
 {
-    public class Tournament
+    public class Tournament : ITournament
     {
         public string TournamentID { get; set; }
         public string TournamentName { get; set; }
         public int TournamentSize { get; set; }
         public List<TeamModel> TeamIDs { get; set; }
-
         public string TeamID { get; set; }
 
         public Tournament()
@@ -29,6 +29,8 @@ namespace LogicLayer
         }
         public int CalculateRounds(int TeamCount)
         {
+            
+            if(TeamCount <= 0 ) {throw new ArgumentException("Teams have to be submitted");}
             if (TeamCount % 2 == 0)
             {
                 for (int i = 1; i <= 5; i++)
@@ -41,9 +43,7 @@ namespace LogicLayer
                 throw new Exception("Tournament already filled");
             }
             throw new Exception("Teamcount must be even");
-
         }
-
     }
     
 }

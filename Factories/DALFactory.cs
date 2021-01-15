@@ -4,12 +4,13 @@ using System.Text;
 using DataAccessLayer;
 using Interfaces.DALInterfaces;
 
-namespace LogicLayer
+namespace Factories
+
 {
     public class DALFactory
     {
        
-        public ILeaderboardDB leaderboardDB()
+        public ILeaderboardManagerDB leaderboardDB()
         {
             return new LeaderboardDB();
         }
@@ -17,11 +18,11 @@ namespace LogicLayer
         {
             return new TeamDB();
         }
-        public IProfileDB profileDB()
+        public IProfileManagerDB profileDB()
         {
             return new ProfileDB();
         }
-        public ITournamentDB tournamentDB()
+        public ITournamentManagerDB tournamentDB()
         {
             return new TournamentDB();
         }

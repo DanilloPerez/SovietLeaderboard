@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Interfaces.DALInterfaces
 {
-   public interface IProfileDB
+   public interface IProfileManagerDB
     {
         bool CreateProfile(ProfileModel model);
         ProfileModel GetProfile(string userID);

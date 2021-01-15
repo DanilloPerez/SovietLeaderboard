@@ -6,7 +6,7 @@ using System.Text;
 
 namespace DataAccessLayer
 {
-    public class TournamentDB : ITournamentDB
+    public class TournamentDB : ITournamentManagerDB
     {
         private ISqlConnection sqlConnection = new ConnectionFactory().SqlConnection();
         public bool CreateTournament(TournamentModel model)
@@ -83,9 +83,26 @@ namespace DataAccessLayer
             return POSmodel;
         }
 
+        public TournamentModel GetTournamentByID(string iD)
+        {
+            List<string[]> param = new List<string[]>()
+            {
+                 new string[] {"@TournamentID",iD}
 
+            };
+            List<string[]> result = sqlConnection.ExecuteSearchQueryWithArrayReturn("SELECT * FROM Tournaments WHERE TournamentID = @TournamentID", param);
+
+            TournamentModel tournaments = new TournamentModel();
+            tournaments.TournamentID = result[0][0].ToString();
+            tournaments.TeamID = result[0][1].ToString();
+            tournaments.TournamentName = result[0][2].ToString();
+            tournaments.TournamentSize = (Convert.ToInt32(result[0][3]));
+
+
+            return tournaments;
+        }
     }
-    
+
 
 
 }

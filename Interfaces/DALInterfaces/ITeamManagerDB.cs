@@ -7,7 +7,6 @@ namespace DataAccessLayer
     {
         bool CreateTeam(TeamModel model);
         void DeleteTeams(string teamID);
-        bool EditTeam(TeamModel model);
         List<TeamModel> GetTeams();
         TeamModel FindTeamByID(string teamID);
     }

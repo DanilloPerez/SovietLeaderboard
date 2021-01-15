@@ -1936,6 +1936,20 @@
           "bin/placeholder/DataAccessLayer.dll": {}
         }
       },
+      "Factories/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "DataAccessLayer": "1.0.0",
+          "Interfaces": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Factories.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Factories.dll": {}
+        }
+      },
       "Interfaces/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -6668,6 +6682,11 @@
       "path": "../DataAccessLayer/DataAccessLayer.csproj",
       "msbuildProject": "../DataAccessLayer/DataAccessLayer.csproj"
     },
+    "Factories/1.0.0": {
+      "type": "project",
+      "path": "../Factories/Factories.csproj",
+      "msbuildProject": "../Factories/Factories.csproj"
+    },
     "Interfaces/1.0.0": {
       "type": "project",
       "path": "../Interfaces/Interfaces.csproj",
@@ -6681,7 +6700,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "DataAccessLayer >= 1.0.0"
+      "Factories >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -6690,11 +6709,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\danil\\Source\\Repos\\SovietLeaderboard\\LogicLayer\\LogicLayer.csproj",
+      "projectUniqueName": "C:\\Users\\danil\\source\\repos\\SovietLeaderboard\\LogicLayer\\LogicLayer.csproj",
       "projectName": "LogicLayer",
-      "projectPath": "C:\\Users\\danil\\Source\\Repos\\SovietLeaderboard\\LogicLayer\\LogicLayer.csproj",
+      "projectPath": "C:\\Users\\danil\\source\\repos\\SovietLeaderboard\\LogicLayer\\LogicLayer.csproj",
       "packagesPath": "C:\\Users\\danil\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\danil\\Source\\Repos\\SovietLeaderboard\\LogicLayer\\obj\\",
+      "outputPath": "C:\\Users\\danil\\source\\repos\\SovietLeaderboard\\LogicLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\danil\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6710,8 +6729,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\danil\\Source\\Repos\\SovietLeaderboard\\DataAccessLayer\\DataAccessLayer.csproj": {
-              "projectPath": "C:\\Users\\danil\\Source\\Repos\\SovietLeaderboard\\DataAccessLayer\\DataAccessLayer.csproj"
+            "C:\\Users\\danil\\source\\repos\\SovietLeaderboard\\Factories\\Factories.csproj": {
+              "projectPath": "C:\\Users\\danil\\source\\repos\\SovietLeaderboard\\Factories\\Factories.csproj"
             }
           }
         }

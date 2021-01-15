@@ -9,7 +9,7 @@ namespace LogicLayer.Profile
 {
     public class Profile : IProfile
     {
-        IProfileDB profileDB = new ProfileDB();
+        IProfileManagerDB profileDB = new ProfileDB();
 
 
         public string UserID { get; set; }
