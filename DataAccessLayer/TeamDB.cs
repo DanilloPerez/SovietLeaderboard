@@ -14,13 +14,12 @@ namespace DataAccessLayer
         {
             List<string[]> param = new List<string[]>()
             {
-                new string[] {"@TeamID",model.TeamID },
-                new string[] {"@OwnerID",model.OwnerID },
+              
                 new string[] {"@TeamName",model.TeamName},
                 new string[] {"@Teamdesc",model.TeamDescription},
 
             };
-            sqlConnection.ExecuteNonSearchQueryParameters("INSERT INTO Teams(`TeamID`,`OwnerID`,`TeamName`,`TeamDescription`) VALUES( @TeamID , @OwnerID , @TeamName , @Teamdesc)", param);
+            sqlConnection.ExecuteNonSearchQueryParameters("INSERT INTO Teams(`TeamName`,`TeamDescription`) VALUES( @TeamName , @Teamdesc)", param);
             return true;
         }
         public bool EditTeam(TeamModel model)

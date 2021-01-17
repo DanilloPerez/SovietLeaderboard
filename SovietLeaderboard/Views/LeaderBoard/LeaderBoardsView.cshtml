@@ -13,18 +13,14 @@
 <table class="table">
     <thead>
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.LeaderboardID)
-            </th>
+           
             <th>
                 @Html.DisplayNameFor(model => model.LeaderBoardName)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.LeaderBoardDescription)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.UserID)
-            </th>
+            
            
           <th></th>  
         </tr>
@@ -32,18 +28,14 @@
     <tbody>
 @foreach (var item in Model) {
         <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.LeaderboardID)
-            </td>
+         
             <td>
                 @Html.DisplayFor(modelItem => item.LeaderBoardName)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.LeaderBoardDescription)
             </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.UserID)
-            </td>
+            
          
             <td>
                 @Html.ActionLink("View", "LeaderBoardView", new { LeaderBoardID = item.LeaderboardID }) |

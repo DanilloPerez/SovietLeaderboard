@@ -15,13 +15,11 @@ namespace DataAccessLayer
 
             List<string[]> param = new List<string[]>()
             {
-                new string[] {"@LeaderBoardID",model.LeaderboardID },
-                new string[] {"@OwnerID",model.UserID},
-               
+                
                 new string[] {"@LeaderBoardName",model.LeaderBoardName},
                 new string[] {"@LeaderBoardDescription",model.LeaderBoardDescription }
             };
-            sqlConnection.ExecuteNonSearchQueryParameters(" INSERT INTO LeaderBoards (`LeaderBoardID`,`OwnerID`,`LeaderBoardType`,`LeaderBoardName`,`LeaderBoardDescription`) VALUES ( @LeaderboardID , @OwnerID , @LeaderboardType, @LeaderBoardName, @LeaderBoardDescription )", param);
+            sqlConnection.ExecuteNonSearchQueryParameters(" INSERT INTO LeaderBoards (`LeaderBoardName`,`LeaderBoardDescription`) VALUES ( @LeaderBoardName, @LeaderBoardDescription )", param);
             return true;
         }
 
